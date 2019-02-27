@@ -1,0 +1,33 @@
+.imgPlacement {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    height: 100px;
+    width: 100px;
+    border: 1px dashed black;
+    
+  }
+
+  .nameContainer {
+    position: absolute;
+    right: 520px;
+    top: 0px;
+    text-align: center;
+    color: black;
+  }
+
+  .jobContainer {
+    position: absolute;
+    right: 550px;
+    top: 100px;
+    text-align: left;
+    color: black;
+  }
+
+  .desc {
+    position: absolute;
+    right: 520px;
+    top: 200px;
+    color: black;
+  }
+

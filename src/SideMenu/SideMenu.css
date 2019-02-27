@@ -1,0 +1,13 @@
+.sideMenu {
+    background-color: grey;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100%;
+}
+
+.sideMenuHeader {
+    color: white;
+}
+
