@@ -19,12 +19,21 @@ class App extends Component {
       description: "I am a self learning Junior JavaScript Developer, I wish to prove myself to be valuable and I'm currently looking for an opportunity to use my new skills and give me a chance to continue improving. ",
       projects: [
         {id: 1, ProjectName: 'Udemy Project',
-         ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.'}
+         ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.'},
+         {id: 2, ProjectName: 'Project',
+         ProjectDescription: 'This test paragraph is here just so I can see how the logo moves when this paragraph is full.'}
         
       ]
 
     }
   }
+
+  /*
+  Divs side by side
+  margin-right:10px;
+    float:right;
+    Look at flex-box instead of float
+  */
   render() {
 
     

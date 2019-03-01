@@ -13,7 +13,11 @@ body {
   */
 }
 
-.bubble {
+
+
+.flexContainer {
+  display: -webkit-flex;
+  display: flex;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
     background:white; 
@@ -21,21 +25,32 @@ body {
   border-radius: 20px;
   color: #5e5e5e;
   box-shadow: 2px 5px 10px #545454;
+  margin: 30px;
   
 }
 
-.bubble:hover {
+.flexContainer:hover {
+
   
-  background-color:orange;
-  color:white;
-  box-shadow: 0px 5px 20px white;
+    background-color:orange;
+    color:white;
+    box-shadow: 0px 5px 20px white;
+    
+    
   
   
+}
+.spacing {
 
 }
 
+.flexContainer > div {
+  margin: 10px;
+  padding: 10px;
+}
 .Logo {
   width: 300px;
+
 }
 
 

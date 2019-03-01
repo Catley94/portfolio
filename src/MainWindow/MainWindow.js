@@ -42,20 +42,39 @@ const MainWindow = (props) => {
     // }
     //Create a theme for Sunset and perhaps another for aurora, using inline styling and state.
     
+    const projects = (
+        <div>
+          {props.projects.map((project, index) => {
+            return (
+            <div className="flexContainer" >
+
+                    <div>
+                        <h3>{project.ProjectName}</h3>
+                        <p>{project.ProjectDescription}</p>
+                    </div>
+                    
+                    <div>
+                        <img src={logo} className="Logo "alt='React' />
+                    </div>
+                
+            </div>
+            )
+            
+          })}
+        
+        </div>
+
+      );
     return(
     <div className="Main">
         
         
         <div className="midCard">
             <hr className="ShadowTop" />
-            <h2 className="whiteText">My Projects <br />
-            For every project, create divs for that specific project, pass through with props. <br />
-            Look at Person.js within React-Complete-Guide.</h2>
-            <div className="bubble">
-                <h3>{props.projects[0].ProjectName}</h3>
-                <p>{props.projects[0].ProjectDescription}</p>
-                <img src={logo} className="Logo "alt='React' />
-                </div>
+            <h2 className="whiteText">My Projects</h2>
+            <div>
+                {projects}
+            </div>
             
             <hr className="Shadow" />
         </div>
