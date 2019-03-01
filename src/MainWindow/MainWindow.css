@@ -1,20 +1,17 @@
-.imgPlacement {
-  position: absolute;
-  right: 100px;
-  top: 50px;
-  height: 100px;
-  width: 100px;
-  border: 1px dashed black;
-  box-shadow: 2px 5px 10px #545454;
-  
-}
+
 
 .whiteText {
   
   color: white;
 }
 
-
+body {
+  background-color: #F1721A;
+ 
+  /*
+  Blue: 8AB3CA
+  */
+}
 
 .bubble {
   -webkit-transition: all 0.3s ease-in;
@@ -37,37 +34,30 @@
 
 }
 
-
-.bottomCard {
-  background-image: url("http://localhost:3000/static/media/topImage.3fe9d112.jpg");
-  padding: 15px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  box-shadow: 0px 150px 100px #DB4916;
-  
-  
-  
- 
-  
-  
-  
-  
-
+.Logo {
+  width: 300px;
 }
+
+
+
 
 .midCard {
- 
+  
   padding: 20px;
   box-shadow: 0px -100px 100px #DB4916;
+  /*
+  box-shadow: 0px 150px 100px #7BABC1; Blue
+  */
+  
+  /* background-color: #F1721A; */
   
 }
 
 
 
-.topCard {
+.bottomCard {
   
-  
+  /* background-color: #F1721A; */
   padding: 20px;
  
   

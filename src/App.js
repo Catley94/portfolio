@@ -6,6 +6,7 @@ import Radium, {StyleRoot} from 'radium';
 import MainWindow from './MainWindow/MainWindow';
 //import About from './About/About';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Info from './Info/Info';
 
 
 class App extends Component {
@@ -13,23 +14,36 @@ class App extends Component {
     super(props);
     this.state = {
       name: "Samuel Catley",
-      jobTitle: "Junior Web Developer"
+      jobTitle: "Junior Web Developer / Junior Software Engineer",
+      github: "https://github.com/Catley94",
+      description: "I am a self learning Junior JavaScript Developer, I wish to prove myself to be valuable and I'm currently looking for an opportunity to use my new skills and give me a chance to continue improving. ",
+      projects: [
+        {id: 1, ProjectName: 'Udemy Project',
+         ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.'}
+        
+      ]
+
     }
   }
   render() {
-    //
+
+    
+    
     return (
-      <StyleRoot>
+
         <div className="App">
-          <MainWindow name={this.state.name} job={this.state.jobTitle}/>
+          <Info 
+          name={this.state.name} 
+          job={this.state.jobTitle}
+          github={this.state.github}
+          desc={this.state.description}
+          />
+          <MainWindow 
+            projects={this.state.projects}
+          />
           
         </div>
         
-        
-       
-    
-  
-      </StyleRoot>
     );
   }
   /*
@@ -52,4 +66,4 @@ class App extends Component {
   */
 }
 
-export default Radium(App);
+export default App;
