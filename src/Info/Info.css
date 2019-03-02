@@ -9,6 +9,50 @@ margin-left: 350px;
 margin-right: 350px;
 }
 
+.testText1 {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.testText4 {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.testText8 {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.testText12 {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+@keyframes fadeIn {
+  from {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    color: #5e5e5e;
+  }
+}
+
 .topSection {
  /* box-shadow: 0px 150px 100px #DB4916; */
   /*
