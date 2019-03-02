@@ -1,29 +1,47 @@
 .whiteText {
   
-    color: white;
-  }
+  color: #5e5e5e;
+}
 
 .description {
-  color: white;
-  margin-left: 350px;
-  margin-right: 350px;
+color: #5e5e5e;
+margin-left: 350px;
+margin-right: 350px;
 }
 
 .topSection {
-   box-shadow: 0px 150px 100px #DB4916;
-    /*
-    box-shadow: 0px 150px 100px #7BABC1; Blue
-    */
-    
-    background-image: url("./Media/topImage.jpg");
-    /*
-    background-image: url("./Media/aurora.jpg");
-    */
-    padding: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-    
-    
-  }
+ /* box-shadow: 0px 150px 100px #DB4916; */
+  /*
+  box-shadow: 0px 150px 100px #7BABC1; Blue
+  */
+  
+  
+  /*
+  background-image: url("http://localhost:3000/Media/aurora.jpg");
+  */
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100px 10px;
+  border-top-style: dotted;
+  border-right-style: dotted;
+/*     border-left-style: dotted; */
+  border-color: orange;
+  border-width: 5px;
+  
+  
+  
+  
+}
+
+.githubText {
+  position: absolute;
+  margin-left: 450px;
+  color: black;
+}
+
+.imgZero {
+  position: relative;
+  top: 18px;
+  height: 200px;
+}

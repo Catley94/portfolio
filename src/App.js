@@ -16,7 +16,7 @@ class App extends Component {
       name: "Samuel Catley",
       jobTitle: "Junior Web Developer / Junior Software Engineer",
       github: "https://github.com/Catley94",
-      description: "I am a self learning Junior JavaScript Developer, I wish to prove myself to be valuable and I'm currently looking for an opportunity to use my new skills and give me a chance to continue improving. ",
+      description: "I am a self learning Junior JavaScript Developer, I aim to prove worth within the programming industry and I'm currently looking for an opportunity to use my skills and give me a chance to continue improving. ",
       projects: [
         {id: 1, ProjectName: 'Udemy Project',
          ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.'},

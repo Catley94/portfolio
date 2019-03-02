@@ -2,18 +2,53 @@
 
 .whiteText {
   
-  color: white;
+  color: #5e5e5e;
 }
 
 body {
-  background-color: #F1721A;
+  
  
   /*
   Blue: 8AB3CA
   */
 }
 
+.testText {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
 
+@-webkit-keyframes fadeIn {
+  from {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    color: black;
+  }
+}
 
 .flexContainer {
   display: -webkit-flex;
@@ -34,7 +69,7 @@ body {
   
     background-color:orange;
     color:white;
-    box-shadow: 0px 5px 20px white;
+    box-shadow: 0px 5px 20px #545454;
     
     
   
@@ -59,7 +94,7 @@ body {
 .midCard {
   
   padding: 20px;
-  box-shadow: 0px -100px 100px #DB4916;
+  /* box-shadow: 0px -100px 100px #DB4916; */
   /*
   box-shadow: 0px 150px 100px #7BABC1; Blue
   */
@@ -73,8 +108,14 @@ body {
 .bottomCard {
   
   /* background-color: #F1721A; */
-  padding: 20px;
- 
+  padding: 50px;
+  border-radius: 300px 10px 10px;
+  border-left-style: dotted;
+  border-bottom-style: dotted;
+/*     border-left-style: dotted; */
+  border-color: orange;
+  border-width: 5px;
+  border-bottom-left-radius: 100px;
   
 }
 
@@ -82,6 +123,7 @@ body {
   display: block;
    margin: 3px 0;
 }
+
 
 
 

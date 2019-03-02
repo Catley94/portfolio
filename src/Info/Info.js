@@ -3,6 +3,7 @@ import './Info.css';
 
 
 
+
 const Info = (props) => {
     const style = {
         
@@ -13,7 +14,7 @@ const Info = (props) => {
             <h2 className="whiteText">{props.job}</h2>
             <p className="description">{props.desc}</p>
             <a href={props.github} className="whiteText">My Github</a> 
-            
+           
         </div>
     )
 }

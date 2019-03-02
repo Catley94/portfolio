@@ -4,7 +4,7 @@ import './MainWindow.css';
 import sunset from './Media/topImage.jpg';
 import img2 from './Media/aurora.jpg'; 
 import logo from './Media/logo.svg';
-
+import ZeroOne from './Media/01.png';
 
 
 const MainWindow = (props) => {
@@ -70,20 +70,21 @@ const MainWindow = (props) => {
         
         
         <div className="midCard">
-            <hr className="ShadowTop" />
+            
+           
             <h2 className="whiteText">My Projects</h2>
             <div>
                 {projects}
             </div>
             
-            <hr className="Shadow" />
+            
         </div>
 
         
         <div className="bottomCard">
             
-            <p className="whiteText">If you are interested in contacting me, please email <a href="mailto:s.catley@live.co.uk" className="whiteText">s.catley@live.co.uk</a><br />
-                <i>This website is subject to change to reflect my skills.</i>
+            <p className="whiteText">Please use this email to contact me <a href="mailto:s.catley@live.co.uk" className="whiteText">s.catley@live.co.uk</a><br />
+                <i>This website will evolve with my skills.</i>
             </p>
             
         </div>
