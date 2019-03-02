@@ -6,7 +6,7 @@
 }
 
 body {
-  
+  font-variant: small-caps;
  
   /*
   Blue: 8AB3CA
@@ -14,25 +14,11 @@ body {
 }
 
 .testText {
+  color: #5e5e5e;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    position: relative;
-    top: -50px;
-    opacity: 0;
-    color: white;
-  }
-  to {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-    color: black;
-  }
 }
 
 @keyframes fadeIn {
@@ -46,9 +32,10 @@ body {
     position: relative;
     top: 0px;
     opacity: 1;
-    color: black;
+    color: #5e5e5e;
   }
 }
+
 
 .flexContainer {
   display: -webkit-flex;
@@ -109,13 +96,14 @@ body {
   
   /* background-color: #F1721A; */
   padding: 50px;
-  border-radius: 300px 10px 10px;
+  
+  border-top-left-radius: 100px;
   border-left-style: dotted;
   border-bottom-style: dotted;
 /*     border-left-style: dotted; */
   border-color: orange;
   border-width: 5px;
-  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   
 }
 
@@ -123,6 +111,8 @@ body {
   display: block;
    margin: 3px 0;
 }
+
+
 
 
 

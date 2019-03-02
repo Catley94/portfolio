@@ -72,7 +72,7 @@ const MainWindow = (props) => {
         <div className="midCard">
             
            
-            <h2 className="whiteText">My Projects</h2>
+            <h2 className="testText">My Projects</h2>
             <div>
                 {projects}
             </div>
