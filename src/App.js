@@ -15,10 +15,14 @@ class App extends Component {
       description: "I am a self learning Junior JavaScript Developer, I aim to prove worth within the programming industry and I'm currently looking for an opportunity to use my skills and give me a chance to continue improving. ",
       projects: [
         {id: 1, ProjectName: 'Udemy Project',
-         ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.'
+         ProjectDescription: 'This project has been made as alongside following a Udemy Course: React - The Complete Guide (incl Hooks, React Router, Redux). It starts by creating a SPA that displays 3 people wihtin an array, then dynamically outputs it to the webpage.',
+         ProjectLink: 'https://www.udemy.com/learn-react-redux-from-beginner-to-paid-professional/',
+         GithubLink: 'https://github.com/Catley94/react-complete-guide'
         },
-        {id: 2, ProjectName: 'Project',
-          ProjectDescription: 'This test paragraph is here just so I can see how the logo moves when this paragraph is full.'
+        {id: 2, ProjectName: 'React TicTacToe',
+          ProjectDescription: 'This project is from the official ReactJS website, a TicTacToe game which is a tutorial for users first learning how to use React, it covers stateful/stateless components, using State and Props plus incorporating onClick features for clicking on each square and updating the values.',
+          ProjectLink: 'https://reactjs.org/tutorial/tutorial.html',
+          GithubLink: ''
         }
       ]
     }

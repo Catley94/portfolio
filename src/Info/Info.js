@@ -1,9 +1,6 @@
 import React from 'react';
 import './Info.css';
 
-
-
-
 const Info = (props) => {
     return (
         <div className="topSection" >
@@ -15,8 +12,6 @@ const Info = (props) => {
         </div>
     )
 }
-
-
 
 
 export default Info;

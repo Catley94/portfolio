@@ -12,6 +12,8 @@ const MainWindow = (props) => {
                 id={project.id}
                 projectN={project.ProjectName}
                 projectDesc={project.ProjectDescription}
+                projectLink={project.ProjectLink}
+                githubLink={project.GithubLink}
             />      )
                 }
             )
