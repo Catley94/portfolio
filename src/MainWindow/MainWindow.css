@@ -1,18 +1,9 @@
-
-
-.whiteText {
-  
-  color: #5e5e5e;
-}
-
 body {
   font-variant: small-caps;
- 
-  /*
-  Blue: 8AB3CA
-  */
 }
-
+.whiteText {
+  color: #5e5e5e;
+}
 .testText {
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
@@ -20,7 +11,6 @@ body {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
-
 @keyframes fadeIn {
   from {
     position: relative;
@@ -35,8 +25,6 @@ body {
     color: #5e5e5e;
   }
 }
-
-
 .flexContainer {
   display: -webkit-flex;
   display: flex;
@@ -48,65 +36,31 @@ body {
   color: #5e5e5e;
   box-shadow: 2px 5px 10px #545454;
   margin: 30px;
-  
 }
-
 .flexContainer:hover {
-
-    /* background-image: linear-gradient(orange, yellow, white); */
-    background-color:orange;
-    color:white;
-    box-shadow: 0px 5px 20px #545454;
-    
-    
-  
-  
+  background-color:orange;
+  color:white;
+  box-shadow: 0px 5px 20px #545454;
 }
-.spacing {
-
-}
-
 .flexContainer > div {
   margin: 10px;
   padding: 10px;
 }
 .Logo {
   width: 300px;
-
 }
-
-
-
-
 .midCard {
-  
   padding: 20px;
-  /* box-shadow: 0px -100px 100px #DB4916; */
-  /*
-  box-shadow: 0px 150px 100px #7BABC1; Blue
-  */
-  
-  /* background-color: #F1721A; */
-  
 }
-
-
-
 .bottomCard {
-  
-  /* background-color: #F1721A; */
   padding: 50px;
-  
   border-top-left-radius: 100px;
   border-left-style: dotted;
   border-bottom-style: dotted;
-/*     border-left-style: dotted; */
   border-color: orange;
   border-width: 5px;
   border-bottom-right-radius: 100px;
-  
 }
-
 .break {
   display: block;
    margin: 3px 0;

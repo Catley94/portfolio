@@ -3,14 +3,12 @@
   -webkit-align-items: center;
           align-items: center;
 }
-
 .App-logo {
   -webkit-animation: App-logo-spin infinite 20s linear;
           animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 30vh;
@@ -25,14 +23,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
-
-
-
 @-webkit-keyframes App-logo-spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -43,8 +36,6 @@
             transform: rotate(360deg);
   }
 }
-
-
 @keyframes App-logo-spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -55,13 +46,11 @@
             transform: rotate(360deg);
   }
 }
-
 .styling {
   position: relative;
   left: 600px;
  width: 50%;
   height: 100%;
   text-align: center;
-  
 }
 
