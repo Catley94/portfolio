@@ -24,6 +24,10 @@ class App extends Component {
           ProjectLink: 'https://reactjs.org/tutorial/tutorial.html',
           GithubLink: ''
         }
+      ],
+      sideProjects: [
+        {id:1, ProjectName: 'Spirit Animals',
+      }
       ]
     }
   }
@@ -38,6 +42,7 @@ class App extends Component {
         />
         <MainWindow 
           projects={this.state.projects}
+          sideProjects={this.state.sideProjects}
         />  
       </div>
     );

@@ -1,5 +1,5 @@
 body {
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
 }
 .whiteText {
   color: #5e5e5e;
@@ -36,6 +36,7 @@ body {
   color: #5e5e5e;
   box-shadow: 2px 5px 10px #545454;
   margin: 30px;
+  justify-content: space-evenly;
 }
 .flexContainer:hover {
   background-color:orange;
@@ -65,11 +66,13 @@ body {
   display: block;
    margin: 3px 0;
 }
+.Solidity {
+  height: 200px;
+}
 
-
-
-
-
+.SPDesc {
+  width: 600px;
+}
 
 
 

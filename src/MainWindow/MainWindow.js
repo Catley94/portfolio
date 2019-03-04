@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainWindow.css';
 import Projects from './Projects';
+import SideProjects from './SideProjects';
 
 
 const MainWindow = (props) => {
@@ -20,12 +21,31 @@ const MainWindow = (props) => {
           }
         </div>
       );
+      const sideProjects = (
+        <div>
+          {props.sideProjects.map(project => {
+            return (
+            <SideProjects 
+                id={project.id}
+                projectN={project.ProjectName}
+                projectDesc={project.ProjectDescription}
+                
+            />      )
+                }
+            )
+          }
+        </div>
+      );
     return(
         <div className="Main">
             <div className="midCard">
-                <h2 className="testText">My Projects</h2>
+                <h2 className="testText">React Projects</h2>
                 <div>
                     {projects}
+                </div>
+                <h2 className="testText">React and Solidity Projects</h2>
+                <div>
+                    {sideProjects}
                 </div>
             </div>
             <div className="bottomCard">
