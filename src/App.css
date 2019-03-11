@@ -54,3 +54,11 @@
   text-align: center;
 }
 
+.showHideButton {
+  left: 10px;
+  margin: 30px;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './MainWindow.css';
 import Projects from './Projects';
 import SideProjects from './SideProjects';
+import Info from '../Info/Info';
 
 
 const MainWindow = (props) => {
@@ -37,7 +38,14 @@ const MainWindow = (props) => {
         </div>
       );
     return(
+        
         <div className="Main">
+        <Info 
+          name={props.name} 
+          job={props.job}
+          github={props.github}
+          desc={props.desc}
+            />
             <div className="midCard">
                 <h2 className="testText">React Projects</h2>
                 <div>
