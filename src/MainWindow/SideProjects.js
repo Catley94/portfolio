@@ -26,7 +26,7 @@ const SideProjects = (props) => {
     return (
         <div className="flexContainer" id={props.id}>
             <div>
-                <h3><a href={props.projectLink}>{props.projectN}</a></h3>
+                <h3 className="projectTitle"><a href={props.projectLink}>{props.projectN}</a></h3>
                 <p className="SPDesc">{saDesc()}</p>
                 
             </div>  

@@ -21,6 +21,7 @@ const Navigation = (props) => {
         boxShadow: '2px 5px 10px #545454',
         display: props.hidden ? 'none' : 'block',
         opacity: '0.8',
+        zIndex: '1',
         
         
     
@@ -38,12 +39,7 @@ const Navigation = (props) => {
                         <br />
                         </div>
                         <div>
-                            <NavLink to="/About" className="menuText"><h3>About</h3></NavLink>
-                        <br />
-                        </div>
-                        <div>
-                            <NavLink to="/Contact" className="menuText"><h3>Contact</h3></NavLink>
-                        <br />
+                            <h3 className="menuText">More links coming soon...</h3>
                         </div>
                     </div>
                 </div>

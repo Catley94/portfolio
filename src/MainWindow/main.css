@@ -1,0 +1,211 @@
+.Main .midCard {
+  text-align: center;
+  padding: 20px;
+}
+
+.Main .midCard .titles {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+.Main .midCard .technologies {
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard {
+    padding: 20px;
+  }
+}
+
+.Main .midCard .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: white;
+  border-radius: 20px;
+  color: #5e5e5e;
+  -webkit-box-shadow: 2px 5px 10px #545454;
+          box-shadow: 2px 5px 10px #545454;
+  margin: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .flexContainer {
+    margin: 50px 50px;
+  }
+}
+
+.Main .midCard .flexContainer:hover {
+  background-color: orange;
+  color: white;
+  -webkit-box-shadow: 0px 5px 20px #545454;
+          box-shadow: 0px 5px 20px #545454;
+}
+
+.Main .midCard .flexContainer > div {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .flexContainer > div {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+.Main .midCard .Logo {
+  width: 100px;
+  position: absolute;
+  margin-top: 50px;
+  left: 25%;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .Logo {
+    margin-top: 30px;
+    left: 30%;
+    width: 200px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.Main .midCard .pLogo {
+  width: 100px;
+  position: absolute;
+  margin-top: 50px;
+  left: 39%;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .pLogo {
+    margin-top: 30px;
+    left: 30%;
+    width: 200px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.Main .midCard .Solidity {
+  height: 80px;
+  position: absolute;
+  margin-top: 50px;
+  left: 60%;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .Solidity {
+    margin-top: 30px;
+    left: 70%;
+    height: 150px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.Main .midCard .content {
+  display: block;
+  margin: 70px 10px auto;
+  padding: 10px;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .content {
+    margin: 10px 10px;
+  }
+}
+
+.Main .midCard .SPDesc {
+  display: block;
+  margin: 70px 10px auto;
+  padding: 10px;
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .SPDesc {
+    margin: 10px 50px;
+  }
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .projectTitle {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media (min-width: 840px) {
+  .Main .midCard .projectGithub {
+    position: relative;
+    left: 100px;
+  }
+}
+
+.Main .bottomCard {
+  padding: 50px;
+  border-top-left-radius: 100px;
+  border-left-style: dotted;
+  border-bottom-style: dotted;
+  border-color: orange;
+  border-width: 5px;
+  border-bottom-right-radius: 100px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  .Main .bottomCard {
+    text-align: center;
+  }
+}
+
+.Main .bottomCard .whiteText {
+  color: #5e5e5e;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    color: #5e5e5e;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    color: #5e5e5e;
+  }
+}
+/*# sourceMappingURL=main.css.map */

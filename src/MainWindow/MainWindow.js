@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainWindow.css';
+import './main.css';
 import Projects from './Projects';
 import SideProjects from './SideProjects';
 import Info from '../Info/Info';
@@ -47,11 +47,16 @@ const MainWindow = (props) => {
           desc={props.desc}
             />
             <div className="midCard">
-                <h2 className="testText">React Projects</h2>
+                <h2 classNames="titles">Technologies I have used</h2>
+                <div className="technologies">
+                  <h3>HTML CSS JAVASCRIPT SASS REACT SOLIDITY</h3>
+                  
+                </div>
+                <h2 className="titles">React Projects</h2>
                 <div>
                     {projects}
                 </div>
-                <h2 className="testText">React and Solidity Projects</h2>
+                <h2 className="titles">React and Solidity Projects</h2>
                 <div>
                     {sideProjects}
                 </div>

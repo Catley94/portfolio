@@ -1,0 +1,96 @@
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+
+);
+
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+a {
+    color: selector($colours, fontColour);
+  }
+  .whiteText {
+    color: selector($colours, fontColour);
+  }
+  h1 {
+    color: selector($colours, fontColour);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  h2 {
+    color: selector($colours, fontColour);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  .description {
+    margin-left: 1px;
+    margin-right: 1px;
+    color: selector($colours, fontColour);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            
+            @include desktop {
+              margin-left: 350px;
+              margin-right: 350px;
+          }
+  }
+  .githubLink {
+    color: selector($colours, fontColour);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  @keyframes fadeIn {
+    from {
+      position: relative;
+      top: -50px;
+      opacity: 0;
+      color: selector($colours, secondary);
+    }
+    to {
+      position: relative;
+      top: 0px;
+      opacity: 1;
+      color: selector($colours, fontColour);
+    }
+  }
+  .topSection {
+    text-align: center;
+    padding: 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px 10px;
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-color: selector($colours, primary);
+    border-width: 5px;
+  }
+  .githubText {
+    position: absolute;
+    margin-left: 450px;
+    color: black;
+  }
+  .imgZero {
+    position: relative;
+    top: 18px;
+    height: 200px;
+  }
+  

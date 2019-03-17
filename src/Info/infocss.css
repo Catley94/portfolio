@@ -23,21 +23,28 @@ h2 {
 }
 
 .description {
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 1px;
+  margin-right: 1px;
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 8s;
-  animation-duration: 8s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+@media (min-width: 840px) {
+  .description {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
 }
 
 .githubLink {
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 12s;
-  animation-duration: 12s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -71,7 +78,8 @@ h2 {
 }
 
 .topSection {
-  padding: 15px;
+  text-align: center;
+  padding: 1px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 100px 10px;
@@ -92,4 +100,4 @@ h2 {
   top: 18px;
   height: 200px;
 }
-/*# sourceMappingURL=info.css.map */
+/*# sourceMappingURL=infocss.css.map */
