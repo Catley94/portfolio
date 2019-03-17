@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import Info from './Info/Info';
+import './App/app.css';
 import MainWindow from './MainWindow/MainWindow';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navigation from './Navigation/Navigation';
+import Contact from './Contact/Contact';
 
 
 class App extends Component {
@@ -28,23 +29,57 @@ class App extends Component {
       sideProjects: [
         {id:1, ProjectName: 'Spirit Animals',
       }
-      ]
+      ],
+      hiddenMenu: true,
     }
   }
+    showHidden = () => {
+    if(this.state.hiddenMenu === true) { 
+      console.log('hiddenMenu was true, now false')
+    this.setState({hiddenMenu: false})
+    } else { 
+      console.log('hiddenMenu was false, now true')
+    this.setState({hiddenMenu: true})
+    }
+}
+
+navClick = () => {
+
+}
   render() {
+    /*
+    <Route path="/About" component={About} />
+        <Route path="/Contact" component={Contact} />
+        
+    */
+//    <button  
+//    className="showHideButton" 
+//    onClick={this.showHidden}
+//  />
     return (
-      <div className="App">
-        <Info 
-          name={this.state.name} 
-          job={this.state.jobTitle}
-          github={this.state.github}
-          desc={this.state.description}
-        />
-        <MainWindow 
-          projects={this.state.projects}
-          sideProjects={this.state.sideProjects}
-        />  
-      </div>
+      <Router>
+        <div className="App">
+          <Navigation 
+            hidden={this.state.hiddenMenu}
+          />
+          <div className="lineContainer" onClick={this.showHidden}>
+            <div className="line"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+
+          <Route path="/" exact render={(props) => <MainWindow {...props}
+            name={this.state.name} 
+            job={this.state.jobTitle}
+            github={this.state.github}
+            desc={this.state.description} 
+            projects={this.state.projects}
+            sideProjects={this.state.sideProjects} />} 
+          />
+          <Route path="/Contact" component={Contact} />
+        </div>
+
+      </Router>
     );
   }
 }
