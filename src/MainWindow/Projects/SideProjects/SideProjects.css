@@ -1,0 +1,80 @@
+.SPFlexContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 10% 10% auto;
+      grid-template-rows: 10% 10% auto;
+      grid-template-areas: "SPTitle" "Logos" "SPDesc";
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: white;
+  border-radius: 20px;
+  color: #5e5e5e;
+  -webkit-box-shadow: 2px 5px 10px #545454;
+          box-shadow: 2px 5px 10px #545454;
+}
+
+@media (min-width: 840px) {
+  .SPFlexContainer {
+    -ms-grid-columns: auto 10%;
+        grid-template-columns: auto 10%;
+    -ms-grid-rows: 10% auto;
+        grid-template-rows: 10% auto;
+        grid-template-areas: "SPTitle  Logos" "SPDesc Logos ";
+  }
+}
+
+.SPFlexContainer:hover {
+  background-color: orange;
+  color: white;
+  -webkit-box-shadow: 0px 5px 20px #545454;
+          box-shadow: 0px 5px 20px #545454;
+}
+
+.SPFlexContainer .SPFlexContainer > div {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.SPFlexContainer .SPTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: SPTitle;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.SPFlexContainer .SPDesc {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: SPDesc;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.SPFlexContainer .SPLogo {
+  width: 100px;
+  padding: 10px;
+}
+
+.SPFlexContainer .SPSolidity {
+  height: 80px;
+}
+
+.SPFlexContainer .Logos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Logos;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=SideProjects.css.map */

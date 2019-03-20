@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.css';
-import Projects from './Projects';
-import SideProjects from './SideProjects';
+import Projects from './Projects/Projects';
+import SideProjects from './Projects/SideProjects/SideProjects';
 import Info from '../Info/Info';
 
 

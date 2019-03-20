@@ -46,6 +46,7 @@ $spacing: (
     border-radius: selector($spacing, borderRadius);
     color: selector($colours, fontColour);
     box-shadow: 2px 5px 10px #545454;
+    margin: 20px;
     @include desktop {
         margin: 50px 50px;
     }
@@ -56,8 +57,8 @@ $spacing: (
     }
     .flexContainer > div {
         align-content: center;
-        margin: 0px;
-        padding: 0px;
+        margin: 50px;
+        padding: 50px;
         @include desktop {
             margin: 10px;
             padding: 10px;
@@ -75,7 +76,7 @@ $spacing: (
     .content {
 
         grid-area: content;
-             
+        padding: 10px;
         @include desktop {
             margin: 50px;
             
@@ -111,32 +112,3 @@ $spacing: (
 
 
 
-
-.Logo {
-    width: selector($spacing, reactLogoWidth);
-    position: absolute;
-    margin-top: 50px;
-    left: 25%;
-    @include desktop {
-        margin-top: selector($spacing, marginTop);
-        left: 30%;
-        width: selector($spacing, reactLogoWidthD);
-        position: relative;
-        left: 0%;
-    }
-}
-
-.Solidity {
-    height: selector($spacing, solidityLogoWidth);
-    position: absolute;
-    margin-top: 50px;
-    left: 60%;
-    @include desktop {
-        margin-top: selector($spacing, marginTop);
-        left: 70%;
-        height: selector($spacing, solidityLogoWidthD);
-        position: relative;
-        left: 0%;
-    }
-
-}

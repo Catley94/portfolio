@@ -13,6 +13,7 @@
   color: #5e5e5e;
   -webkit-box-shadow: 2px 5px 10px #545454;
           box-shadow: 2px 5px 10px #545454;
+  margin: 20px;
 }
 
 @media (min-width: 840px) {
@@ -31,8 +32,8 @@
 .flexContainer .flexContainer > div {
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 50px;
+  padding: 50px;
 }
 
 @media (min-width: 840px) {
@@ -60,6 +61,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: content;
+  padding: 10px;
 }
 
 @media (min-width: 840px) {
@@ -99,40 +101,6 @@
     margin-top: 30px;
     left: 30%;
     width: 150px;
-    position: relative;
-    left: 0%;
-  }
-}
-
-.Logo {
-  width: 100px;
-  position: absolute;
-  margin-top: 50px;
-  left: 25%;
-}
-
-@media (min-width: 840px) {
-  .Logo {
-    margin-top: 30px;
-    left: 30%;
-    width: 150px;
-    position: relative;
-    left: 0%;
-  }
-}
-
-.Solidity {
-  height: 80px;
-  position: absolute;
-  margin-top: 50px;
-  left: 60%;
-}
-
-@media (min-width: 840px) {
-  .Solidity {
-    margin-top: 30px;
-    left: 70%;
-    height: 150px;
     position: relative;
     left: 0%;
   }

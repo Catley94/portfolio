@@ -1,0 +1,119 @@
+
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+
+);
+$spacing: (
+    padding: 0,
+    margin: 0,
+    marginTop: 30px,
+    borderRadius: 20px,
+    reactLogoWidth: 100px,
+    solidityLogoWidth: 80px,
+    reactLogoWidthD: 150px,
+    solidityLogoWidthD: 150px,
+);
+
+.SPFlexContainer {
+            
+    display: grid;
+    grid-template-columns: 1;
+        grid-template-rows: 10% 10% auto;
+        grid-template-areas:
+        "SPTitle"
+        "Logos"
+        "SPDesc";
+    
+    
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+      background:selector($colours, secondary); 
+    
+    border-radius: selector($spacing, borderRadius);
+    color: selector($colours, fontColour);
+    box-shadow: 2px 5px 10px #545454;
+    @include desktop {
+        grid-template-columns: auto 10%;
+        grid-template-rows: 10% auto;
+        grid-template-areas:
+        "SPTitle  Logos"
+        "SPDesc Logos ";
+        
+    }
+    &:hover {
+        background-color: selector($colours, primary);
+        color:selector($colours, secondary);
+        box-shadow: 0px 5px 20px #545454;
+    }
+    .SPFlexContainer > div {
+        align-content: center;
+        margin: 0px;
+        padding: 0px;
+        @include desktop {
+            
+        }
+    }
+    .SPTitle {
+        grid-area: SPTitle;
+        justify-self: center;
+        
+        
+        @include desktop {
+            
+        }
+        
+        
+    }
+    .SPDesc {
+
+        grid-area: SPDesc;
+        align-self: center;
+        justify-self: center;
+        @include desktop {
+            
+            
+        }
+    }
+    .SPLogo {
+        
+        width: selector($spacing, reactLogoWidth);
+        padding: 10px;
+        
+        @include desktop {
+            
+            
+        }
+    }
+    .SPSolidity {
+        
+        height: selector($spacing, solidityLogoWidth);
+        
+        @include desktop {
+            
+        }
+    
+    }
+    .Logos {
+        grid-area: Logos;
+        justify-self: center;
+        align-self: center;
+        @include desktop {
+            
+        }
+    }
+    
+}
