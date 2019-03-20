@@ -29,10 +29,22 @@ $desktop: 840px;
 }
 
 .Main {
-
+    
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    "InfoComponent"
+    "MidCard"
+    "BottomCard";
+    .InfoComponent {
+        grid-area:InfoComponent;
+    }
     .midCard {
+        grid-area: MidCard;
         text-align: center;
         padding: 20px;
+        
         .titles {
             color: selector($colours, fontColour);
             -webkit-animation-name: fadeIn;
@@ -52,88 +64,8 @@ $desktop: 840px;
         @include desktop {
             padding: 20px;
         }
-        .flexContainer {
-            
-            display: -webkit-flex;
-            display: flex;
-            -webkit-transition: all 0.3s ease-in;
-            transition: all 0.3s ease-in;
-              background:selector($colours, secondary); 
-            
-            border-radius: selector($spacing, borderRadius);
-            color: selector($colours, fontColour);
-            box-shadow: 2px 5px 10px #545454;
-            margin: 30px;
-            justify-content: space-evenly;
-
-            @include desktop {
-                margin: 50px 50px;
-            }
-        }
-        .flexContainer:hover {
-            background-color: selector($colours, primary);
-            color:selector($colours, secondary);
-            box-shadow: 0px 5px 20px #545454;
-        }
-        .flexContainer > div {
-            align-content: center;
-            margin: 0px;
-            padding: 0px;
-            @include desktop {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
-        .Logo {
-            width: selector($spacing, reactLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 25%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 30%;
-                width: selector($spacing, reactLogoWidthD);
-                position: relative;
-                left: 0%;
-            }
-        }
-        .pLogo {
-            width: selector($spacing, reactLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 39%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 30%;
-                width: selector($spacing, reactLogoWidthD);
-                position: relative;
-                left: 0%;
-                
-            }
-        }
-        .Solidity {
-            height: selector($spacing, solidityLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 60%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 70%;
-                height: selector($spacing, solidityLogoWidthD);
-                position: relative;
-                left: 0%;
-            }
-  
-        }
-        .content {
-            display: block;
-            margin: 70px 10px auto;
-            padding: 10px;
-            @include desktop {
-                margin: 10px 10px;
-                
-            }
-        }
+        
+        
         .SPDesc {
             display: block;
             margin: 70px 10px auto;
@@ -144,22 +76,10 @@ $desktop: 840px;
             }
             
         }
-        .projectTitle {
-            @include desktop {
-                position: relative;
-                left: 100px;
-            }
-            
-            
-        }
-        .projectGithub {
-            @include desktop {
-                position: relative;
-                left: 100px;
-            }
-        }
+        
     }
     .bottomCard {
+        grid-area: BottomCard;
         padding: 50px;
         border-top-left-radius: 100px;
         border-left-style: dotted;

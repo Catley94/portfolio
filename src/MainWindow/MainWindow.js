@@ -40,12 +40,14 @@ const MainWindow = (props) => {
     return(
         
         <div className="Main">
-        <Info 
-          name={props.name} 
-          job={props.job}
-          github={props.github}
-          desc={props.desc}
+          <div className="InfoComponent">
+            <Info 
+              name={props.name} 
+              job={props.job}
+              github={props.github}
+              desc={props.desc}
             />
+          </div>
             <div className="midCard">
                 <h2 classNames="titles">Technologies I have used</h2>
                 <div className="technologies">

@@ -1,0 +1,140 @@
+.flexContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 20%;
+      grid-template-columns: auto 20%;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+      grid-template-areas: "projectTitle pLogo" "projectGithub pLogo" "content content";
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: white;
+  border-radius: 20px;
+  color: #5e5e5e;
+  -webkit-box-shadow: 2px 5px 10px #545454;
+          box-shadow: 2px 5px 10px #545454;
+}
+
+@media (min-width: 840px) {
+  .flexContainer {
+    margin: 50px 50px;
+  }
+}
+
+.flexContainer:hover {
+  background-color: orange;
+  color: white;
+  -webkit-box-shadow: 0px 5px 20px #545454;
+          box-shadow: 0px 5px 20px #545454;
+}
+
+.flexContainer .flexContainer > div {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (min-width: 840px) {
+  .flexContainer .flexContainer > div {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+.flexContainer .projectTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: projectTitle;
+}
+
+@media (min-width: 840px) {
+  .flexContainer .projectTitle {
+    position: relative;
+    left: 100px;
+  }
+}
+
+.flexContainer .content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: content;
+}
+
+@media (min-width: 840px) {
+  .flexContainer .content {
+    margin: 50px;
+  }
+}
+
+.flexContainer .projectGithub {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: projectGithub;
+}
+
+@media (min-width: 840px) {
+  .flexContainer .projectGithub {
+    position: relative;
+    left: 100px;
+  }
+}
+
+.flexContainer .pLogo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: pLogo;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 100px;
+}
+
+@media (min-width: 840px) {
+  .flexContainer .pLogo {
+    margin-top: 30px;
+    left: 30%;
+    width: 150px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.Logo {
+  width: 100px;
+  position: absolute;
+  margin-top: 50px;
+  left: 25%;
+}
+
+@media (min-width: 840px) {
+  .Logo {
+    margin-top: 30px;
+    left: 30%;
+    width: 150px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.Solidity {
+  height: 80px;
+  position: absolute;
+  margin-top: 50px;
+  left: 60%;
+}
+
+@media (min-width: 840px) {
+  .Solidity {
+    margin-top: 30px;
+    left: 70%;
+    height: 150px;
+    position: relative;
+    left: 0%;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

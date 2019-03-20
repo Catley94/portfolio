@@ -22,31 +22,6 @@ h2 {
   animation-duration: 4s;
 }
 
-.description {
-  margin-left: 1px;
-  margin-right: 1px;
-  color: #5e5e5e;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-}
-
-@media (min-width: 840px) {
-  .description {
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-}
-
-.githubLink {
-  color: #5e5e5e;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-}
-
 @-webkit-keyframes fadeIn {
   from {
     position: relative;
@@ -78,15 +53,60 @@ h2 {
 }
 
 .topSection {
-  text-align: center;
-  padding: 1px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 4;
+      grid-template-rows: 4;
+  justify-items: center;
+      grid-template-areas: "Name" "JobTitle" "Description" "Github";
   border-radius: 100px 10px;
   border-top-style: dotted;
   border-right-style: dotted;
   border-color: orange;
   border-width: 5px;
+}
+
+.topSection .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Name;
+}
+
+.topSection .jobTitle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: JobTitle;
+}
+
+.topSection .description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Description;
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+@media (min-width: 840px) {
+  .topSection .description {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+}
+
+.topSection .githubLink {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: Github;
+  color: #5e5e5e;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 .githubText {
