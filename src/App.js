@@ -23,7 +23,7 @@ class App extends Component {
         {id: 2, ProjectName: 'React TicTacToe',
           ProjectDescription: 'This project is from the official ReactJS website, a TicTacToe game which is a tutorial for users first learning how to use React, it covers stateful/stateless components, using State and Props plus incorporating onClick features for clicking on each square and updating the values.',
           ProjectLink: 'https://reactjs.org/tutorial/tutorial.html',
-          GithubLink: ''
+          GithubLink: 'https://github.com/Catley94/react-tut'
         }
       ],
       sideProjects: [
