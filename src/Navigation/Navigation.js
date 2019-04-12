@@ -41,6 +41,7 @@ const Navigation = (props) => {
                         <div>
                             <h3 className="menuText">Other apps:</h3>
                             <a href="https://spokenaffirmations.herokuapp.com/" className="menuText spokenAffirmations" target="_blank"><h3>Spoken Affirmations</h3></a>
+                            <a href="https://naughtsandcrosses.herokuapp.com" className="menuText naughtsAndCrosses" target="_blank"><h3>Naughts and Crosses</h3></a>
                         </div>
                     </div>
                 </div>
