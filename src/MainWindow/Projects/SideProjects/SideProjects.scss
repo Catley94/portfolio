@@ -32,17 +32,13 @@ $spacing: (
             
     display: grid;
     grid-template-columns: 1;
-        grid-template-rows: 10% 10% auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
         "SPTitle"
         "Logos"
         "SPDesc";
-    
-    
-    -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-      background:selector($colours, secondary); 
-    
+    background:selector($colours, secondary); 
     border-radius: selector($spacing, borderRadius);
     color: selector($colours, fontColour);
     box-shadow: 2px 5px 10px #545454;
@@ -51,8 +47,7 @@ $spacing: (
         grid-template-rows: 10% auto;
         grid-template-areas:
         "SPTitle  Logos"
-        "SPDesc Logos ";
-        
+        "SPDesc Logos"; 
     }
     &:hover {
         background-color: selector($colours, primary);
@@ -64,28 +59,26 @@ $spacing: (
         margin: 0px;
         padding: 0px;
         @include desktop {
-            
+    
         }
     }
     .SPTitle {
         grid-area: SPTitle;
-        justify-self: center;
-        
-        
+        justify-self: center;        
         @include desktop {
-            
+            justify-self: center;
         }
-        
-        
     }
     .SPDesc {
 
         grid-area: SPDesc;
+        position: relative;
+        top: -50px;
         align-self: center;
-        justify-self: center;
+        justify-self: start;
         @include desktop {
-            
-            
+            align-self: center;
+            justify-self: center;   
         }
     }
     .SPLogo {
@@ -99,13 +92,10 @@ $spacing: (
         }
     }
     .SPSolidity {
-        
         height: selector($spacing, solidityLogoWidth);
-        
         @include desktop {
             
         }
-    
     }
     .Logos {
         grid-area: Logos;
@@ -115,5 +105,4 @@ $spacing: (
             
         }
     }
-    
 }

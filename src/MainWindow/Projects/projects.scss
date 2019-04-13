@@ -38,15 +38,12 @@ $spacing: (
     "projectTitle pLogo"
     "projectGithub pLogo"
     "content content";
-    
-    -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-      background:selector($colours, secondary); 
-    
+    background:selector($colours, secondary); 
     border-radius: selector($spacing, borderRadius);
     color: selector($colours, fontColour);
     box-shadow: 2px 5px 10px #545454;
-    margin: 20px;
+    margin: 2px;
     @include desktop {
         margin: 50px 50px;
     }
@@ -66,39 +63,43 @@ $spacing: (
     }
     .projectTitle {
         grid-area: projectTitle;
+        position: relative;
+        left: 15px;
         @include desktop {
             position: relative;
-            left: 100px;
+            left: 50px;
         }
-        
-        
     }
     .content {
-
         grid-area: content;
         padding: 10px;
         @include desktop {
             margin: 50px;
-            
         }
     }
-    
-    
     .projectGithub {
         grid-area: projectGithub;
+        align-self: start;
+        position: relative;
+        left: -15px;
         @include desktop {
+            align-self: start;
             position: relative;
-            left: 100px;
+            left: 50px;
         }
     }
     .pLogo {
         grid-area: pLogo;
         justify-self: end;
-        align-self: start;
+        align-self: end;
         width: selector($spacing, reactLogoWidth);
+        position: relative;
+        left: 15px;
+        top: 10px;
         
         
         @include desktop {
+            align-self: start;
             margin-top: selector($spacing, marginTop);
             left: 30%;
             width: selector($spacing, reactLogoWidthD);

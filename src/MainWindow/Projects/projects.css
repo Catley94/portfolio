@@ -13,7 +13,7 @@
   color: #5e5e5e;
   -webkit-box-shadow: 2px 5px 10px #545454;
           box-shadow: 2px 5px 10px #545454;
-  margin: 20px;
+  margin: 2px;
 }
 
 @media (min-width: 840px) {
@@ -47,12 +47,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: projectTitle;
+  position: relative;
+  left: 15px;
 }
 
 @media (min-width: 840px) {
   .flexContainer .projectTitle {
     position: relative;
-    left: 100px;
+    left: 50px;
   }
 }
 
@@ -74,12 +76,20 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: projectGithub;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  position: relative;
+  left: -15px;
 }
 
 @media (min-width: 840px) {
   .flexContainer .projectGithub {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     position: relative;
-    left: 100px;
+    left: 50px;
   }
 }
 
@@ -90,14 +100,20 @@
   grid-area: pLogo;
   -ms-grid-column-align: end;
       justify-self: end;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   width: 100px;
+  position: relative;
+  left: 15px;
+  top: 10px;
 }
 
 @media (min-width: 840px) {
   .flexContainer .pLogo {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     margin-top: 30px;
     left: 30%;
     width: 150px;

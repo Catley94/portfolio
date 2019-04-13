@@ -1,23 +1,11 @@
-.Main {
+.Main .midCard {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
+  -ms-grid-columns: 2;
+      grid-template-columns: 2;
   -ms-grid-rows: 3;
       grid-template-rows: 3;
-      grid-template-areas: "InfoComponent" "MidCard" "BottomCard";
-}
-
-.Main .InfoComponent {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: InfoComponent;
-}
-
-.Main .midCard {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: MidCard;
+      grid-template-areas: "information information" "Project0 Project1" "titleSideProjects titleSideProjects" "sideProjects sideProjects";
   text-align: center;
   padding: 20px;
 }
@@ -25,17 +13,25 @@
 .Main .midCard .titles {
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+          animation-name: fadeIn;
   -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.Main .midCard .information {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: information;
 }
 
 .Main .midCard .technologies {
+  grid-area: technologies;
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+          animation-name: fadeIn;
   -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @media (min-width: 840px) {
@@ -56,28 +52,30 @@
   }
 }
 
-.Main .bottomCard {
+.Main .midCard .Project0 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Project0;
+}
+
+.Main .midCard .Project1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: Project1;
+}
+
+.Main .midCard .titleSideProjects {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: BottomCard;
-  padding: 50px;
-  border-top-left-radius: 100px;
-  border-left-style: dotted;
-  border-bottom-style: dotted;
-  border-color: orange;
-  border-width: 5px;
-  border-bottom-right-radius: 100px;
-  text-align: center;
+  -ms-grid-column-span: 2;
+  grid-area: titleSideProjects;
 }
 
-@media (min-width: 840px) {
-  .Main .bottomCard {
-    text-align: center;
-  }
-}
-
-.Main .bottomCard .whiteText {
-  color: #5e5e5e;
+.Main .midCard .sideProjects {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: sideProjects;
 }
 
 @-webkit-keyframes fadeIn {

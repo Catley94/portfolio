@@ -61,6 +61,10 @@ h2 {
       grid-template-rows: 4;
   justify-items: center;
       grid-template-areas: "Name" "JobTitle" "Description" "Github";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   border-radius: 100px 10px;
   border-top-style: dotted;
   border-right-style: dotted;
@@ -86,9 +90,9 @@ h2 {
   grid-area: Description;
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+          animation-name: fadeIn;
   -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @media (min-width: 840px) {
@@ -104,20 +108,8 @@ h2 {
   grid-area: Github;
   color: #5e5e5e;
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+          animation-name: fadeIn;
   -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-}
-
-.githubText {
-  position: absolute;
-  margin-left: 450px;
-  color: black;
-}
-
-.imgZero {
-  position: relative;
-  top: 18px;
-  height: 200px;
+          animation-duration: 4s;
 }
 /*# sourceMappingURL=infocss.css.map */

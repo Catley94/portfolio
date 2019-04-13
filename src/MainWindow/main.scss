@@ -1,9 +1,8 @@
-
+$desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
     primary: orange,
     secondary: white,
-
 );
 $spacing: (
     padding: 0,
@@ -15,92 +14,67 @@ $spacing: (
     reactLogoWidthD: 200px,
     solidityLogoWidthD: 150px,
 );
-
 @function selector($CNS, $color-name) {
     @return map-get($CNS, $color-name)
 };
-
-$desktop: 840px;
-
 @mixin desktop {
     @media (min-width: #{$desktop}){
         @content;
     }
 }
-
 .Main {
     
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
-    grid-template-areas: 
-    "InfoComponent"
-    "MidCard"
-    "BottomCard";
-    .InfoComponent {
-        grid-area:InfoComponent;
-    }
     .midCard {
-        grid-area: MidCard;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "information information"
+        "Project0 Project1"
+        "titleSideProjects titleSideProjects"
+        "sideProjects sideProjects";
         text-align: center;
         padding: 20px;
-        
         .titles {
             color: selector($colours, fontColour);
-            -webkit-animation-name: fadeIn;
-                    animation-name: fadeIn;
-            -webkit-animation-duration: 4s;
-                    animation-duration: 4s;
+            animation-name: fadeIn;
+            animation-duration: 4s;
+        }
+        .information {
+            grid-area:information;
         }
         .technologies {
+            grid-area:technologies;
             color: selector($colours, fontColour);
-            -webkit-animation-name: fadeIn;
-                    animation-name: fadeIn;
-            -webkit-animation-duration: 4s;
-                    animation-duration: 4s;
-                    
+            animation-name: fadeIn;
+            animation-duration: 4s;
         }
-        
         @include desktop {
             padding: 20px;
         }
-        
-        
         .SPDesc {
             display: block;
             margin: 70px 10px auto;
             padding: 10px;
             @include desktop {
                 margin: 10px 50px;
-                
             }
-            
         }
-        
-    }
-    .bottomCard {
-        grid-area: BottomCard;
-        padding: 50px;
-        border-top-left-radius: 100px;
-        border-left-style: dotted;
-        border-bottom-style: dotted;
-        border-color: orange;
-        border-width: 5px;
-        border-bottom-right-radius: 100px;
-        text-align: center;
-        @include desktop {
-            text-align: center;
+        .Project0 {
+            grid-area:Project0;
         }
-        
-        .whiteText {
-            color: selector($colours, fontColour);
+        .Project1 {
+            grid-area:Project1;
+
+        }
+        .titleSideProjects {
+            grid-area: titleSideProjects;
+        }
+        .sideProjects {
+            grid-area:sideProjects;
         }
     }
 }
-
-
-
-
 @keyframes fadeIn {
     from {
       position: relative;
@@ -115,14 +89,6 @@ $desktop: 840px;
       color: selector($colours, fontColour);
     }
 }
-
-
-
-
-// .break {
-//     display: block;
-//      margin: 3px 0;
-// }
 
   
 

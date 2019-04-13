@@ -36,4 +36,32 @@
 .lineContainer {
   cursor: pointer;
 }
+
+.App .AppContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+      grid-template-areas: "Info" "MainWindow" "Footer";
+}
+
+.App .AppContainer .Info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Info;
+}
+
+.App .AppContainer .MainWindow {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: MainWindow;
+}
+
+.App .AppContainer .Footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Footer;
+}
 /*# sourceMappingURL=app.css.map */

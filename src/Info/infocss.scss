@@ -64,37 +64,29 @@ a {
     "JobTitle"
     "Description"
     "Github";
+    align-items: center;
+    text-align: center;
     .name {
-      
       grid-area: Name;
-     
     }
     .jobTitle {
-      
       grid-area: JobTitle;
     }
     .description {
-      
       grid-area: Description;
       color: selector($colours, fontColour);
-      -webkit-animation-name: fadeIn;
-              animation-name: fadeIn;
-      -webkit-animation-duration: 4s;
-              animation-duration: 4s;
-              
-              @include desktop {
-                margin-left: 350px;
-                margin-right: 350px;
-            }
+      animation-name: fadeIn;
+      animation-duration: 4s;
+      @include desktop {
+        margin-left: 350px;
+        margin-right: 350px;
+      }
     }
     .githubLink {
-      
       grid-area: Github;
       color: selector($colours, fontColour);
-      -webkit-animation-name: fadeIn;
-              animation-name: fadeIn;
-      -webkit-animation-duration: 4s;
-              animation-duration: 4s;
+      animation-name: fadeIn;
+      animation-duration: 4s;
     }
     border-radius: 100px 10px;
     border-top-style: dotted;
@@ -102,14 +94,3 @@ a {
     border-color: selector($colours, primary);
     border-width: 5px;
   }
-  .githubText {
-    position: absolute;
-    margin-left: 450px;
-    color: black;
-  }
-  .imgZero {
-    position: relative;
-    top: 18px;
-    height: 200px;
-  }
-  
