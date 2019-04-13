@@ -1,9 +1,8 @@
-
+$desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
     primary: orange,
     secondary: white,
-
 );
 $spacing: (
     padding: 0,
@@ -15,124 +14,43 @@ $spacing: (
     reactLogoWidthD: 200px,
     solidityLogoWidthD: 150px,
 );
-
 @function selector($CNS, $color-name) {
     @return map-get($CNS, $color-name)
 };
-
-$desktop: 840px;
-
 @mixin desktop {
     @media (min-width: #{$desktop}){
         @content;
     }
 }
-
 .Main {
-
+    
     .midCard {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "information information"
+        "Project0 Project1"
+        "titleSideProjects titleSideProjects"
+        "sideProjects sideProjects";
         text-align: center;
         padding: 20px;
         .titles {
             color: selector($colours, fontColour);
-            -webkit-animation-name: fadeIn;
-                    animation-name: fadeIn;
-            -webkit-animation-duration: 4s;
-                    animation-duration: 4s;
+            animation-name: fadeIn;
+            animation-duration: 4s;
+        }
+        .information {
+            grid-area:information;
         }
         .technologies {
+            grid-area:technologies;
             color: selector($colours, fontColour);
-            -webkit-animation-name: fadeIn;
-                    animation-name: fadeIn;
-            -webkit-animation-duration: 4s;
-                    animation-duration: 4s;
-                    
+            animation-name: fadeIn;
+            animation-duration: 4s;
         }
-        
         @include desktop {
             padding: 20px;
-        }
-        .flexContainer {
-            
-            display: -webkit-flex;
-            display: flex;
-            -webkit-transition: all 0.3s ease-in;
-            transition: all 0.3s ease-in;
-              background:selector($colours, secondary); 
-            
-            border-radius: selector($spacing, borderRadius);
-            color: selector($colours, fontColour);
-            box-shadow: 2px 5px 10px #545454;
-            margin: 30px;
-            justify-content: space-evenly;
-
-            @include desktop {
-                margin: 50px 50px;
-            }
-        }
-        .flexContainer:hover {
-            background-color: selector($colours, primary);
-            color:selector($colours, secondary);
-            box-shadow: 0px 5px 20px #545454;
-        }
-        .flexContainer > div {
-            align-content: center;
-            margin: 0px;
-            padding: 0px;
-            @include desktop {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
-        .Logo {
-            width: selector($spacing, reactLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 25%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 30%;
-                width: selector($spacing, reactLogoWidthD);
-                position: relative;
-                left: 0%;
-            }
-        }
-        .pLogo {
-            width: selector($spacing, reactLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 39%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 30%;
-                width: selector($spacing, reactLogoWidthD);
-                position: relative;
-                left: 0%;
-                
-            }
-        }
-        .Solidity {
-            height: selector($spacing, solidityLogoWidth);
-            position: absolute;
-            margin-top: 50px;
-            left: 60%;
-            @include desktop {
-                margin-top: selector($spacing, marginTop);
-                left: 70%;
-                height: selector($spacing, solidityLogoWidthD);
-                position: relative;
-                left: 0%;
-            }
-  
-        }
-        .content {
-            display: block;
-            margin: 70px 10px auto;
-            padding: 10px;
-            @include desktop {
-                margin: 10px 10px;
-                
-            }
         }
         .SPDesc {
             display: block;
@@ -140,47 +58,23 @@ $desktop: 840px;
             padding: 10px;
             @include desktop {
                 margin: 10px 50px;
-                
-            }
-            
-        }
-        .projectTitle {
-            @include desktop {
-                position: relative;
-                left: 100px;
-            }
-            
-            
-        }
-        .projectGithub {
-            @include desktop {
-                position: relative;
-                left: 100px;
             }
         }
-    }
-    .bottomCard {
-        padding: 50px;
-        border-top-left-radius: 100px;
-        border-left-style: dotted;
-        border-bottom-style: dotted;
-        border-color: orange;
-        border-width: 5px;
-        border-bottom-right-radius: 100px;
-        text-align: center;
-        @include desktop {
-            text-align: center;
+        .Project0 {
+            grid-area:Project0;
         }
-        
-        .whiteText {
-            color: selector($colours, fontColour);
+        .Project1 {
+            grid-area:Project1;
+
+        }
+        .titleSideProjects {
+            grid-area: titleSideProjects;
+        }
+        .sideProjects {
+            grid-area:sideProjects;
         }
     }
 }
-
-
-
-
 @keyframes fadeIn {
     from {
       position: relative;
@@ -195,14 +89,6 @@ $desktop: 840px;
       color: selector($colours, fontColour);
     }
 }
-
-
-
-
-// .break {
-//     display: block;
-//      margin: 3px 0;
-// }
 
   
 

@@ -54,6 +54,28 @@ $colour: darken(orange, 10%);
   .lineContainer {
     cursor: pointer;
   }
+  .App {
+
+    .AppContainer {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: 3;
+      grid-template-areas: 
+      "Info"
+      "MainWindow"
+      "Footer";
+      .Info {
+        grid-area:Info;
+      }
+      .MainWindow {
+        grid-area:MainWindow;
+      }
+      .Footer {
+        grid-area:Footer;
+
+      }
+    }
+  }
 
 
 

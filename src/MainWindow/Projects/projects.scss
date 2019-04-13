@@ -1,0 +1,115 @@
+
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+
+);
+$spacing: (
+    padding: 0,
+    margin: 0,
+    marginTop: 30px,
+    borderRadius: 20px,
+    reactLogoWidth: 100px,
+    solidityLogoWidth: 80px,
+    reactLogoWidthD: 150px,
+    solidityLogoWidthD: 150px,
+);
+
+.flexContainer {
+            
+    display: grid;
+    
+    grid-template-columns: auto 20%;
+    grid-template-rows: 3;
+    grid-template-areas:
+    "projectTitle pLogo"
+    "projectGithub pLogo"
+    "content content";
+    transition: all 0.3s ease-in;
+    background:selector($colours, secondary); 
+    border-radius: selector($spacing, borderRadius);
+    color: selector($colours, fontColour);
+    box-shadow: 2px 5px 10px #545454;
+    margin: 2px;
+    @include desktop {
+        margin: 50px 50px;
+    }
+    &:hover {
+        background-color: selector($colours, primary);
+        color:selector($colours, secondary);
+        box-shadow: 0px 5px 20px #545454;
+    }
+    .flexContainer > div {
+        align-content: center;
+        margin: 50px;
+        padding: 50px;
+        @include desktop {
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    .projectTitle {
+        grid-area: projectTitle;
+        position: relative;
+        left: 15px;
+        @include desktop {
+            position: relative;
+            left: 50px;
+        }
+    }
+    .content {
+        grid-area: content;
+        padding: 10px;
+        @include desktop {
+            margin: 50px;
+        }
+    }
+    .projectGithub {
+        grid-area: projectGithub;
+        align-self: start;
+        position: relative;
+        left: -15px;
+        @include desktop {
+            align-self: start;
+            position: relative;
+            left: 50px;
+        }
+    }
+    .pLogo {
+        grid-area: pLogo;
+        justify-self: end;
+        align-self: end;
+        width: selector($spacing, reactLogoWidth);
+        position: relative;
+        left: 15px;
+        top: 10px;
+        
+        
+        @include desktop {
+            align-self: start;
+            margin-top: selector($spacing, marginTop);
+            left: 30%;
+            width: selector($spacing, reactLogoWidthD);
+            position: relative;
+            left: 0%;
+            
+        }
+    }
+
+}
+
+
+

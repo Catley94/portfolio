@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './Media/logo.svg';
-import solidity from './Media/Solidity.png';
+import logo from '../../Media/logo.svg';
+import solidity from '../../Media/Solidity.png';
+import './SideProjects.css';
 
 
 
@@ -18,23 +19,18 @@ const SideProjects = (props) => {
                 This game will run on the Blockchain with a backend of Solidity which is 
                 Ethereums own language to build smart contracts. 
                 This will ensure that every item/object in the game is a permenant assett and 
-                cannot be lost or deleted, making the game extremely secure and have redundant systems.
-                
-                </p>
+                cannot be lost or deleted, making the game extremely secure and have redundant systems.</p>
         )
     }
     return (
-        <div className="flexContainer" id={props.id}>
-            <div>
-                <h3 className="projectTitle"><a href={props.projectLink}>{props.projectN}</a></h3>
+        <div className="SPFlexContainer" id={props.id}>
+            
+                <h3 className="SPTitle"><a href={props.projectLink}>{props.projectN}</a></h3>
                 <p className="SPDesc">{saDesc()}</p>
-                
-            </div>  
-            <div>
-                <img src={logo} className="Logo "alt='React' />
-                <img src={solidity} className="Solidity"alt='React' />
-
-            </div>
+                <div className="Logos">
+                    <img src={logo} className="SPLogo "alt='React' />
+                    <img src={solidity} className="SPSolidity"alt='React' />
+                </div>
         </div>
     )
 }
