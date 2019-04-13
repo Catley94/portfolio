@@ -40,17 +40,26 @@ class App extends Component {
   }
   showHidden = () => {
     if (this.state.hiddenMenu === true) {
-      console.log('hiddenMenu was true, now false')
+      console.log('Menu will now open.')
       this.setState({
         hiddenMenu: false
       })
     } else {
-      console.log('hiddenMenu was false, now true')
+      console.log('Menu will now close.')
       this.setState({
         hiddenMenu: true
       })
     }
   }
+  revertToHidden = () => {
+    if (this.state.hiddenMenu === false) {
+      console.log('User clicked on main body, menu will now close.')
+      this.setState({
+        hiddenMenu: true
+      })
+    }
+  }
+  
   render() {
     return (
       <Router>
@@ -63,7 +72,7 @@ class App extends Component {
             <div className="line2"></div>
             <div className="line3"></div>
           </div>
-          <div className="AppContainer">
+          <div className="AppContainer" onClick={this.revertToHidden}>
             <div className="Info">
               <Info 
                 name={this.state.name} 
