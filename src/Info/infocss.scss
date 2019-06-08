@@ -66,6 +66,14 @@ a {
     "Github";
     align-items: center;
     text-align: center;
+    background: lightblue;
+    padding: 50px;
+    
+    //border-radius: 100px 10px;
+    //border-top-style: dotted;
+    //border-right-style: dotted;
+    //border-color: selector($colours, primary);
+    //border-width: 5px;
     .name {
       grid-area: Name;
     }
@@ -88,9 +96,5 @@ a {
       animation-name: fadeIn;
       animation-duration: 4s;
     }
-    border-radius: 100px 10px;
-    border-top-style: dotted;
-    border-right-style: dotted;
-    border-color: selector($colours, primary);
-    border-width: 5px;
+    
   }

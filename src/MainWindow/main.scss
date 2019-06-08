@@ -22,9 +22,11 @@ $spacing: (
         @content;
     }
 }
+
 .Main {
     
     .midCard {
+        
         display: grid;
         grid-template-columns: 2;
         grid-template-rows: 3;
@@ -42,6 +44,7 @@ $spacing: (
         }
         .information {
             grid-area:information;
+            
         }
         .technologies {
             grid-area:technologies;

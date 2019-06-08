@@ -1,13 +1,8 @@
 .Footer {
   grid-area: Footer;
   padding: 50px;
-  border-top-left-radius: 100px;
-  border-left-style: dotted;
-  border-bottom-style: dotted;
-  border-color: orange;
-  border-width: 5px;
-  border-bottom-right-radius: 100px;
   text-align: center;
+  background: lightblue;
 }
 
 .whiteText {
