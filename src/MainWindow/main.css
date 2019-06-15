@@ -3,19 +3,15 @@
   display: grid;
   -ms-grid-columns: 2;
       grid-template-columns: 2;
-  -ms-grid-rows: 3;
-      grid-template-rows: 3;
-      grid-template-areas: "information information" "Project0 Project1" "titleSideProjects titleSideProjects" "sideProjects sideProjects";
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+      grid-template-areas: "information information" "Project0 Project1";
   text-align: center;
   padding: 20px;
 }
 
 .Main .midCard .titles {
   color: #5e5e5e;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 .Main .midCard .information {
@@ -28,27 +24,11 @@
 .Main .midCard .technologies {
   grid-area: technologies;
   color: #5e5e5e;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 @media (min-width: 840px) {
   .Main .midCard {
     padding: 20px;
-  }
-}
-
-.Main .midCard .SPDesc {
-  display: block;
-  margin: 70px 10px auto;
-  padding: 10px;
-}
-
-@media (min-width: 840px) {
-  .Main .midCard .SPDesc {
-    margin: 10px 50px;
   }
 }
 
@@ -62,49 +42,5 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: Project1;
-}
-
-.Main .midCard .titleSideProjects {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titleSideProjects;
-}
-
-.Main .midCard .sideProjects {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: sideProjects;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    position: relative;
-    top: -50px;
-    opacity: 0;
-    color: white;
-  }
-  to {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-    color: #5e5e5e;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    position: relative;
-    top: -50px;
-    opacity: 0;
-    color: white;
-  }
-  to {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-    color: #5e5e5e;
-  }
 }
 /*# sourceMappingURL=main.css.map */

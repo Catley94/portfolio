@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App/app.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navigation from './Navigation/Navigation';
-import Info from './Info/Info';
 import MainWindow from './MainWindow/MainWindow';
-import Footer from './Footer/Footer';
+import Header from './HeaderNav/Header';
+import About from './About/About';
 
 
 
@@ -13,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       name: "Samuel Catley",
-      jobTitle: "Junior Web Developer / Junior Software Engineer",
+      jobTitle: "Developing for a hobby",
       github: "https://github.com/Catley94",
       description: "I am a self learning Junior JavaScript Developer, I aim to prove worth within the programming industry and I'm currently looking for an opportunity to use my skills and give me a chance to continue improving. ",
       projects: [{
@@ -31,64 +30,26 @@ class App extends Component {
           GithubLink: 'https://github.com/Catley94/react-tut'
         }
       ],
-      sideProjects: [{
-        id: 1,
-        ProjectName: 'Spirit Animals',
-      }],
-      hiddenMenu: true,
     }
   }
-  showHidden = () => {
-    if (this.state.hiddenMenu === true) {
-      console.log('Menu will now open.')
-      this.setState({
-        hiddenMenu: false
-      })
-    } else {
-      console.log('Menu will now close.')
-      this.setState({
-        hiddenMenu: true
-      })
-    }
-  }
-  revertToHidden = () => {
-    if (this.state.hiddenMenu === false) {
-      console.log('User clicked on main body, menu will now close.')
-      this.setState({
-        hiddenMenu: true
-      })
-    }
-  }
-  
   render() {
     return (
       <Router>
         <div className="App">
-          <Navigation 
-            hidden={this.state.hiddenMenu}
-          />
-          <div className="lineContainer" onClick={this.showHidden}>
-            <div className="line"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
+          <div className="HeaderNavigation">
+            <Header />
           </div>
-          <div className="AppContainer" onClick={this.revertToHidden}>
-            <div className="Info">
-              <Info 
-                name={this.state.name} 
-                job={this.state.jobTitle}
+          <div className="AppContainer">
+            <div className="MainWindow">
+              <Route exact path="/About" component={About} />
+              <Route path="/" exact render={(props) => <MainWindow {...props}
+                name={this.state.name}
+                jobTitle={this.state.jobTitle}
                 github={this.state.github}
                 desc={this.state.description}
+                projects={this.state.projects}
+                sideProjects={this.state.sideProjects} />} 
               />
-            </div>
-          <div className="MainWindow">
-            <Route path="/" exact render={(props) => <MainWindow {...props}
-              projects={this.state.projects}
-              sideProjects={this.state.sideProjects} />} 
-            />
-          </div>
-            <div className="Footer">
-              <Footer/>
             </div>
           </div>
         </div>

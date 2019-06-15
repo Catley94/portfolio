@@ -29,18 +29,14 @@ $spacing: (
         
         display: grid;
         grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-rows: 2;
         grid-template-areas: 
         "information information"
-        "Project0 Project1"
-        "titleSideProjects titleSideProjects"
-        "sideProjects sideProjects";
+        "Project0 Project1";
         text-align: center;
         padding: 20px;
         .titles {
             color: selector($colours, fontColour);
-            animation-name: fadeIn;
-            animation-duration: 4s;
         }
         .information {
             grid-area:information;
@@ -49,19 +45,10 @@ $spacing: (
         .technologies {
             grid-area:technologies;
             color: selector($colours, fontColour);
-            animation-name: fadeIn;
-            animation-duration: 4s;
+            
         }
         @include desktop {
             padding: 20px;
-        }
-        .SPDesc {
-            display: block;
-            margin: 70px 10px auto;
-            padding: 10px;
-            @include desktop {
-                margin: 10px 50px;
-            }
         }
         .Project0 {
             grid-area:Project0;
@@ -70,28 +57,9 @@ $spacing: (
             grid-area:Project1;
 
         }
-        .titleSideProjects {
-            grid-area: titleSideProjects;
-        }
-        .sideProjects {
-            grid-area:sideProjects;
-        }
     }
 }
-@keyframes fadeIn {
-    from {
-      position: relative;
-      top: -50px;
-      opacity: 0;
-      color: white;
-    }
-    to {
-      position: relative;
-      top: 0px;
-      opacity: 1;
-      color: selector($colours, fontColour);
-    }
-}
+
 
   
 

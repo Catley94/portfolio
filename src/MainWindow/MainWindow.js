@@ -1,32 +1,24 @@
 import React from 'react';
 import './main.css';
 import Projects from './Projects/Projects';
-import SideProjects from './Projects/SideProjects/SideProjects';
-
 import Footer from '../Footer/Footer';
+import Info from '../Info/Info';
+
 
 
 const MainWindow = (props) => {
     
-      const sideProjects = (
-        <div>
-          {props.sideProjects.map(project => {
-            return (
-            <SideProjects 
-                id={project.id}
-                projectN={project.ProjectName}
-                projectDesc={project.ProjectDescription}
-                
-            />      )
-                }
-            )
-          }
-        </div>
-      );
     return(
         
         <div className="Main">
-        
+          <div className="Info">
+            <Info 
+            name={props.name}
+            jobTitle={props.jobTitle}
+            github={props.github}
+            desc={props.desc}
+            />
+          </div>
             <div className="midCard">
               <div className="information">
                 <h2 classNames="titles">Technologies I have used</h2>
@@ -51,10 +43,10 @@ const MainWindow = (props) => {
                   githubLink={props.projects[1].GithubLink}
                 />
               </div>
-              <h2 className="titleSideProjects">React and Solidity Projects</h2>
-              <div className="sideProjects">
-                  {sideProjects}
-              </div>
+              
+            </div>
+            <div className="Footer">
+              <Footer />
             </div>
             
         </div>

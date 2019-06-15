@@ -1,0 +1,12 @@
+.navContainer {
+  text-align: center;
+  background: lightgrey;
+}
+
+.navContainer > span {
+  display: inline;
+  padding: 4vw;
+  font-size: 3vh;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Header.css.map */

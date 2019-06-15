@@ -1,81 +1,21 @@
-// .styling {
-//     position: absolute;
-//     left: 600px;
-//    width: 50%;
-//     height: 100%;
-//     text-align: center;
-//   }
-$left: 30px;
-$margin: 30px;
-$height: 7.5px;
-$width: 40px;
-$colour: darken(orange, 10%);
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
 
+);
 
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
 
-
-  .line {
-    left: $left;
-    margin: $margin;
-    position: fixed;
-    height: $height;
-    width: $width;
-    background-color: $colour;
-    z-index: 5;
-    border-radius: 20px;
-  }
-
-  .line2 {
-    left: $left;
-    top: 8px;
-    margin: $margin;
-    position: fixed;
-    height: $height;
-    width: $width;
-    background-color: $colour;
-    z-index: 5;
-    border-radius: 20px;
-  }
-
-  .line3 {
-    left: $left;
-    top: 16px;
-    margin: $margin;
-    position: fixed;
-    height: $height;
-    width: $width;
-    background-color: $colour;
-    z-index: 5;
-    border-radius: 20px;
-  }
-
-  
-
-  .lineContainer {
-    cursor: pointer;   
-  }
-  .App {
-
-    .AppContainer {
-      display: grid;
-      grid-template-columns: 1;
-      grid-template-rows: 3;
-      grid-template-areas: 
-      "Info"
-      "MainWindow"
-      "Footer";
-      .Info {
-        grid-area:Info;
-      }
-      .MainWindow {
-        grid-area:MainWindow;
-      }
-      .Footer {
-        grid-area:Footer;
-
-      }
-    }
-  }
-
-
-
+a {
+    color: selector($colours, fontColour);
+    text-decoration: none;
+}
+h1 {
+    color: selector($colours, fontColour);
+}
+h2 {
+    color: selector($colours, fontColour);
+}

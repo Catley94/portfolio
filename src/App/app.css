@@ -1,67 +1,13 @@
-.line {
-  left: 30px;
-  margin: 30px;
-  position: fixed;
-  height: 7.5px;
-  width: 40px;
-  background-color: #cc8400;
-  z-index: 5;
-  border-radius: 20px;
+a {
+  color: #5e5e5e;
+  text-decoration: none;
 }
 
-.line2 {
-  left: 30px;
-  top: 8px;
-  margin: 30px;
-  position: fixed;
-  height: 7.5px;
-  width: 40px;
-  background-color: #cc8400;
-  z-index: 5;
-  border-radius: 20px;
+h1 {
+  color: #5e5e5e;
 }
 
-.line3 {
-  left: 30px;
-  top: 16px;
-  margin: 30px;
-  position: fixed;
-  height: 7.5px;
-  width: 40px;
-  background-color: #cc8400;
-  z-index: 5;
-  border-radius: 20px;
-}
-
-.lineContainer {
-  cursor: pointer;
-}
-
-.App .AppContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 3;
-      grid-template-rows: 3;
-      grid-template-areas: "Info" "MainWindow" "Footer";
-}
-
-.App .AppContainer .Info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Info;
-}
-
-.App .AppContainer .MainWindow {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: MainWindow;
-}
-
-.App .AppContainer .Footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: Footer;
+h2 {
+  color: #5e5e5e;
 }
 /*# sourceMappingURL=app.css.map */
