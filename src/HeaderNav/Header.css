@@ -1,11 +1,11 @@
 .navContainer {
   text-align: center;
-  background: lightgrey;
+  background: white;
 }
 
 .navContainer > span {
   display: inline;
-  padding: 4vw;
+  padding: 3vw;
   font-size: 3vh;
   font-weight: bold;
 }

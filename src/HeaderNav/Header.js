@@ -14,6 +14,9 @@ const Navigation = (props) => {
             <span className="aboutLink">
                 <Link to={'/About'}>About</Link>
             </span>
+            <span className="goudhurstExplorersLink">
+                <a href="https://goudhurst-explorers.herokuapp.com/" className="goudhurstExplorers" target="_blank">Goudhurst Explorers</a>
+            </span>
             <span className="affirmationsLink">
                 <a href="https://spokenaffirmations.herokuapp.com/" className="spokenAffirmations" target="_blank">Spoken Affirmations</a>
             </span>
