@@ -46,8 +46,15 @@ class App extends Component {
         {
           id: 5,
           ProjectName: 'Dubstep Shuriken',
-          ProjectDescription: 'Music Visualiser in the shape of a shuriken, playing to dubstep. Made with P5.js.',
+          ProjectDescription: 'WARNING - CONTAINS FLASHING LIGHTS. Music Visualiser in the shape of a shuriken, playing to dubstep. Made with P5.js.',
           ProjectLink: 'https://codepen.io/Catley94/full/MWYvOKP',
+          GithubLink: 'https://github.com/Catley94/musicVisualizer'
+        },
+        {
+          id: 6,
+          ProjectName: 'Inverted Wings',
+          ProjectDescription: 'WARNING - CONTAINS FLASHING LIGHTS. Music Visualiser using lines grounded on a pulsing circle. Bass circles will omit once volume exceeds certain amount. Made with P5.js.',
+          ProjectLink: 'https://codepen.io/Catley94/full/JjoyLPQ',
           GithubLink: 'https://github.com/Catley94/musicVisualizer'
         }
       ],

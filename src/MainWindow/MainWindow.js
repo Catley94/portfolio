@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.css';
 import Projects from './Projects/Projects';
+import Websites from './Websites/Websites';
 import Footer from '../Footer/Footer';
 import Info from '../Info/Info';
 
@@ -68,11 +69,23 @@ const MainWindow = (props) => {
                   githubLink={props.projects[4].GithubLink}
                 />
               </div>
+              <div className="Project5">
+                <Projects 
+                  projectN={props.projects[5].ProjectName}
+                  projectDesc={props.projects[5].ProjectDescription}
+                  projectLink={props.projects[5].ProjectLink}
+                  githubLink={props.projects[5].GithubLink}
+                />
+              </div>
               <div class="Websites">
-                <div class="goudhurstExplorers">
+                {/* <div class="goudhurstExplorers">
                   <h2 class="titles">Websites</h2>
-                  {/* <Websites /> */}
-                </div>
+                  <Websites 
+                    websiteName={props.websiteName}
+                    websiteDescription={props.websiteDescription}
+                    websiteLink={props.websiteLink}
+                  />
+                </div> */}
               </div>                
             </div>
             <div className="Footer">
