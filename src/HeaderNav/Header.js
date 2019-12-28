@@ -5,24 +5,23 @@ import './Header.css';
 const Navigation = (props) => {
 
     
-
     return (
         <div className="navContainer">
-            <span className="homeLink">
-                <Link to={'/'}>Home</Link>
+            <span className="">
+                <Link class="homeLink navLinks" to={'/'}>Home</Link>
             </span>
-            <span className="aboutLink">
-                <Link to={'/About'}>About</Link>
+            <span className="">
+                <Link class="aboutLink navLinks" to={'/About'}>About</Link>
             </span>
-            <span className="goudhurstExplorersLink">
+            {/* <span className="goudhurstExplorersLink navLinks">
                 <a href="https://goudhurst-explorers.herokuapp.com/" className="goudhurstExplorers" target="_blank">Goudhurst Explorers</a>
             </span>
-            <span className="affirmationsLink">
+            <span className="affirmationsLink navLinks">
                 <a href="https://spokenaffirmations.herokuapp.com/" className="spokenAffirmations" target="_blank">Spoken Affirmations</a>
             </span>
-            <span className="naughtsAndCrossesLink">
+            <span className="naughtsAndCrossesLink navLinks">
                 <a href="https://naughtsandcrosses.herokuapp.com" className="naughtsAndCrosses" target="_blank">Naughts and Crosses</a>
-            </span>
+            </span> */}
         </div>
     )
 }

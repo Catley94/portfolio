@@ -13,7 +13,7 @@ $desktop: 840px;
 
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
+    primary: lightgrey,
     secondary: white,
 
 );
@@ -32,82 +32,76 @@ $spacing: (
             
     display: grid;
     
-    grid-template-columns: auto 20%;
+    grid-template-columns: auto;
     grid-template-rows: 3;
     grid-template-areas:
-    "projectTitle pLogo"
-    "projectGithub pLogo"
-    "content content";
+    "projectTitle"
+    "projectGithub"
+    "content";
     transition: all 0.3s ease-in;
     background:selector($colours, secondary); 
     border-radius: selector($spacing, borderRadius);
     color: selector($colours, fontColour);
     box-shadow: 2px 5px 10px #545454;
-    margin: 2px;
+    margin: 1rem;
+    // height: 25rem;
     @include desktop {
-        margin: 50px 50px;
+        // margin: 5rem;
     }
     &:hover {
         background-color: selector($colours, primary);
         color:selector($colours, secondary);
         box-shadow: 0px 5px 20px #545454;
     }
-    .flexContainer > div {
-        align-content: center;
-        margin: 50px;
-        padding: 50px;
-        @include desktop {
-            margin: 10px;
-            padding: 10px;
-        }
-    }
+    
     .projectTitle {
         grid-area: projectTitle;
         position: relative;
-        left: 15px;
+        padding: .1rem;
         @include desktop {
             position: relative;
-            left: 50px;
+            padding: 0;
         }
     }
     .content {
         grid-area: content;
-        padding: 10px;
+        padding: 1rem;
         @include desktop {
-            margin: 50px;
+            padding: 2rem;
         }
     }
     .projectGithub {
         grid-area: projectGithub;
-        align-self: start;
+        justify-self: center;
+        align-self: center;
         position: relative;
-        left: -15px;
         @include desktop {
-            align-self: start;
+            align-self: center;
+            justify-self: center;
             position: relative;
-            left: 50px;
-        }
-    }
-    .pLogo {
-        grid-area: pLogo;
-        justify-self: end;
-        align-self: end;
-        width: selector($spacing, reactLogoWidth);
-        position: relative;
-        left: 15px;
-        top: 10px;
-        
-        
-        @include desktop {
-            align-self: start;
-            margin-top: selector($spacing, marginTop);
-            left: 30%;
-            width: selector($spacing, reactLogoWidthD);
-            position: relative;
-            left: 0%;
             
         }
     }
+    // .pLogo {
+    //     grid-area: pLogo;
+    //     justify-self: end;
+    //     align-self: end;
+    //     width: selector($spacing, reactLogoWidth);
+    //     position: relative;
+    //     left: 15px;
+    //     top: 10px;
+        
+        
+    //     @include desktop {
+    //         align-self: start;
+    //         margin-top: selector($spacing, marginTop);
+    //         left: 30%;
+    //         width: selector($spacing, reactLogoWidthD);
+    //         position: relative;
+    //         left: 0%;
+            
+    //     }
+    // }
 
 }
 

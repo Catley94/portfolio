@@ -13,9 +13,32 @@ a {
     color: selector($colours, fontColour);
     text-decoration: none;
 }
+a:hover {
+    animation: cubic1 0.4s alternate ease-out 1;
+    
+}
+
+@keyframes cubic1 {
+    0%{
+        font-size: 100%
+    }
+    // 20%{
+    //     font-size: 130%
+    // }
+    50%{
+        font-size: 140%
+    }
+    // 70%{
+    //     font-size: 130%
+    // }
+    100% {
+        font-size: 100%
+    }
+}
 h1 {
     color: selector($colours, fontColour);
 }
 h2 {
     color: selector($colours, fontColour);
 }
+
