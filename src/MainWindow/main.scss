@@ -8,11 +8,7 @@ $spacing: (
     padding: 0,
     margin: 0,
     marginTop: 30px,
-    borderRadius: 20px,
-    reactLogoWidth: 100px,
-    solidityLogoWidth: 80px,
-    reactLogoWidthD: 200px,
-    solidityLogoWidthD: 150px,
+    borderRadius: 20px
 );
 @function selector($CNS, $color-name) {
     @return map-get($CNS, $color-name)
@@ -28,15 +24,28 @@ $spacing: (
     .midCard {
         
         display: grid;
-        grid-template-columns: 2;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "information"
+        "Project0"
+        "Project1"
+        "Project2"
+        "Project3";
+        text-align: center;
+        padding: 2rem;
+        @include desktop {
+        grid-template-columns: 4;
         grid-template-rows: 2;
         grid-template-areas: 
-        "information information"
-        "Project0 Project1";
-        text-align: center;
-        padding: 20px;
+        "information information information information"
+        "Project0 Project1 Project2 Project3";
+        }
         .titles {
             color: selector($colours, fontColour);
+            @include desktop {
+                color: red;
+            }
         }
         .information {
             grid-area:information;
@@ -47,14 +56,20 @@ $spacing: (
             color: selector($colours, fontColour);
             
         }
-        @include desktop {
-            padding: 20px;
-        }
+        
         .Project0 {
             grid-area:Project0;
         }
         .Project1 {
             grid-area:Project1;
+
+        }
+        .Project2 {
+            grid-area:Project2;
+
+        }
+        .Project3 {
+            grid-area:Project3;
 
         }
     }

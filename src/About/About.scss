@@ -1,3 +1,24 @@
+$desktop: 840px;
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+);
+$spacing: (
+    padding: 0,
+    margin: 0,
+    marginTop: 30px,
+    borderRadius: 20px
+);
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
 .AboutMe {
     text-align: center;
     .aboutTitle {

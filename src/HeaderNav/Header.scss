@@ -1,12 +1,29 @@
+$desktop: 840px;
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+);
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+        
+    }
+}
+
+
 .navContainer {
     text-align: center;
-    background: white;
 
     
 }
 .navContainer > span {
     display: inline;
-    padding: 3vw;
-    font-size: 3vh;
+    padding: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }

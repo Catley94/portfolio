@@ -3,6 +3,35 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  -webkit-animation: cubic1 0.4s alternate ease-out 1;
+          animation: cubic1 0.4s alternate ease-out 1;
+}
+
+@-webkit-keyframes cubic1 {
+  0% {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 140%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+
+@keyframes cubic1 {
+  0% {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 140%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+
 h1 {
   color: #5e5e5e;
 }

@@ -1,6 +1,6 @@
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
+    primary: lightgrey,
     secondary: white,
 
 );
@@ -32,7 +32,7 @@ $desktop: 840px;
     "Github";
     align-items: center;
     text-align: center;
-    background: lightgrey;
+    background: selector($colours, primary);
     padding: 50px;
     
     //border-radius: 100px 10px;

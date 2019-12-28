@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../Media/logo.svg';
 import './projects.css';
 
 
@@ -11,8 +10,8 @@ const Projects = (props) => {
             
                 <h3 className="projectTitle"><a href={props.projectLink}>{props.projectN}</a></h3>
                 <p className="content">{props.projectDesc}</p>
-                <p className="projectGithub"><a href={props.githubLink}>Github Repo</a></p>
-                <img src={logo} className="pLogo "alt='React' />
+                <p className="projectGithub"><a href={props.githubLink}>See me on Github!</a></p>
+                {/* <img src={logo} className="pLogo "alt='React' /> */}
         </div>
     )
 }
