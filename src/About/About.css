@@ -1,5 +1,14 @@
+.aboutHeader {
+  background: #D3D3D3;
+  color: #5e5e5e;
+  padding: 10vh;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .AboutMe {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .AboutMe .aboutDesc {

@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=websites.css.map */
+.websiteContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+      grid-template-areas: "websiteTitle" "websiteImage" "websiteDescription";
+}
+
+@media (min-width: 840px) {
+  .websiteContainer {
+    -ms-grid-columns: 2;
+        grid-template-columns: 2;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+        grid-template-areas: "websiteTitle websiteTitle" "websiteImage websiteDescription";
+  }
+}
+
+.websiteTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: websiteTitle;
+  font-size: 1rem;
+}
+
+@media (min-width: 840px) {
+  .websiteTitle {
+    font-size: 1.5rem;
+  }
+}
+
+.websiteImage {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: websiteImage;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 80vw;
+}
+
+@media (min-width: 840px) {
+  .websiteImage {
+    width: 30vw;
+    margin-left: 2.5rem;
+  }
+}
+
+.websiteDescription {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: websiteDescription;
+  display: block;
+  padding: 5rem;
+}
+/*# sourceMappingURL=websites.css.map */

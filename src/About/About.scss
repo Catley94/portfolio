@@ -1,7 +1,7 @@
 $desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
+    primary: #D3D3D3,
     secondary: white,
 );
 $spacing: (
@@ -19,8 +19,17 @@ $spacing: (
     }
 }
 
+.aboutHeader{
+    background: selector($colours, primary);
+    color: selector($colours, fontColour);
+    padding: 10vh;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .AboutMe {
     text-align: center;
+    padding-bottom: 20px;
     .aboutTitle {
 
     }

@@ -78,14 +78,15 @@ const MainWindow = (props) => {
                 />
               </div>
               <div class="Websites">
-                {/* <div class="goudhurstExplorers">
+                <div class="goudhurstExplorers">
                   <h2 class="titles">Websites</h2>
                   <Websites 
-                    websiteName={props.websiteName}
-                    websiteDescription={props.websiteDescription}
-                    websiteLink={props.websiteLink}
+                    websiteName={props.websites[0].WebsiteName}
+                    websiteDescription={props.websites[0].WebsiteDescription}
+                    websiteLink={props.websites[0].WebsiteLink}
+                    websiteImg={props.websites[0].WebsiteImg}
                   />
-                </div> */}
+                </div>
               </div>                
             </div>
             <div className="Footer">
