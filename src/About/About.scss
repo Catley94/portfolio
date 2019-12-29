@@ -24,10 +24,12 @@ $spacing: (
     color: selector($colours, fontColour);
     padding: 10vh;
     font-size: 2rem;
+    text-align: center;
 }
 
 .AboutMe {
     text-align: center;
+    padding-bottom: 20px;
     .aboutTitle {
 
     }

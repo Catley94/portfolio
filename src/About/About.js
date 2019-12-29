@@ -7,8 +7,8 @@ import Footer from '../Footer/Footer';
 const About = (props) => {
     return(
     <div className="aboutContainer">
+        <h2 class="aboutHeader">More about me...</h2>
         <div className="AboutMe">
-            <h2 class="aboutHeader">More about me...</h2>
             <h2 className="aboutTitle">Short and Sweet Summary</h2>
             <p className="aboutDesc">
                 Currently I consider myself a code hobbyist, as I use a lot of my free time mainly to learn as much as I can but also to create, what I consider, pieces of art.
@@ -20,7 +20,7 @@ const About = (props) => {
                 In the mean time, I will continue to take on projects and display them on my Portfolio in order to demonstrate my skills.
                 
             </p>
-            <h3 className="myJourney">My Journey</h3>
+            {/* <h3 className="myJourney">My Journey</h3>
             <p>
                 I started off learning the basics, HTML, CSS and a bit of JavaScript by using tutorials such as SoloLearn, CodeAcademy, Udemy and YouTube. <br />
                 I also had a great friend who was already a Web Developer who offered to help whenever I needed it plus ask any questions!<br />
@@ -29,7 +29,7 @@ const About = (props) => {
                 My first obstacle... Knowing which framework or library to use, my word... the amount of add ons, libraries, frameworks, you have for JavaScript is mind blowing... it got me quite anxious as to carry on, what if I put all this time and effort into a framework/library and not like it? What if it's not popular anymore? 
                 So after a few days of researching the main framworks and libraries out there that I had found, I was either going to choose React or Vue...
                 Why? 
-            </p>
+            </p> */}
         </div>
         <div className="Footer">
             <Footer />

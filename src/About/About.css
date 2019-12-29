@@ -3,10 +3,12 @@
   color: #5e5e5e;
   padding: 10vh;
   font-size: 2rem;
+  text-align: center;
 }
 
 .AboutMe {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .AboutMe .aboutDesc {
