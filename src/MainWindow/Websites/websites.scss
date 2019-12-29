@@ -1,11 +1,65 @@
-.websiteContainer {
-
+$desktop: 840px;
+$colours: (
+    fontColour: #5e5e5e,
+    primary: orange,
+    secondary: white,
+);
+$spacing: (
+    padding: 0,
+    margin: 0,
+    marginTop: 30px,
+    borderRadius: 20px
+);
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
 }
 
-.websiteTitle {
+.websiteContainer {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    "websiteTitle"
+    "websiteImage"
+    "websiteDescription";
+    @include desktop {
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+        grid-template-areas: 
+        "websiteTitle websiteTitle"
+        "websiteImage websiteDescription";
+    }
+}
 
+
+
+.websiteTitle {
+    grid-area: websiteTitle;
+    font-size: 1rem;
+    @include desktop {
+        font-size: 1.5rem;
+        
+    }
+}
+
+.websiteImage{
+    grid-area: websiteImage;
+    justify-self: center;
+    width: 80vw;
+    @include desktop {
+        width: 30vw;
+        margin-left: 2.5rem;
+    }
+    
 }
 
 .websiteDescription {
-    
+    grid-area: websiteDescription;
+    display: block;
+    padding: 5rem;
 }

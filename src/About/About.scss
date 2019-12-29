@@ -1,7 +1,7 @@
 $desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
+    primary: #D3D3D3,
     secondary: white,
 );
 $spacing: (
@@ -17,6 +17,13 @@ $spacing: (
     @media (min-width: #{$desktop}){
         @content;
     }
+}
+
+.aboutHeader{
+    background: selector($colours, primary);
+    color: selector($colours, fontColour);
+    padding: 10vh;
+    font-size: 2rem;
 }
 
 .AboutMe {

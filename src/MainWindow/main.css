@@ -3,20 +3,20 @@
   display: grid;
   -ms-grid-columns: 1;
       grid-template-columns: 1;
-  -ms-grid-rows: 3;
-      grid-template-rows: 3;
-      grid-template-areas: "information" "Project0" "Project1" "Project2" "Project3";
+  -ms-grid-rows: 8;
+      grid-template-rows: 8;
+      grid-template-areas: "information" "Project0" "Project1" "Project2" "Project3" "Project4" "Project5" "Websites";
   text-align: center;
   padding: 2rem;
 }
 
 @media (min-width: 840px) {
   .Main .midCard {
-    -ms-grid-columns: 4;
-        grid-template-columns: 4;
-    -ms-grid-rows: 2;
-        grid-template-rows: 2;
-        grid-template-areas: "information information information information" "Project0 Project1 Project2 Project3";
+    -ms-grid-columns: 3;
+        grid-template-columns: 3;
+    -ms-grid-rows: 4;
+        grid-template-rows: 4;
+        grid-template-areas: "information information information" "Project0 Project1 Project2" "Project3 Project4 Project5" "Websites Websites Websites";
   }
 }
 
@@ -41,6 +41,12 @@
   color: #5e5e5e;
 }
 
+.Main .midCard .Websites {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: Websites;
+}
+
 .Main .midCard .Project0 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -63,5 +69,17 @@
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: Project3;
+}
+
+.Main .midCard .Project4 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: Project4;
+}
+
+.Main .midCard .Project5 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: Project5;
 }
 /*# sourceMappingURL=main.css.map */
