@@ -23,6 +23,7 @@
   -ms-grid-column: 1;
   grid-area: websiteTitle;
   font-size: 1rem;
+  color: #ffcdab;
 }
 
 @media (min-width: 840px) {
@@ -51,6 +52,7 @@
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: websiteDescription;
+  color: #fff4e3;
   display: block;
   padding: 5rem;
 }

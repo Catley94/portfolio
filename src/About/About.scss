@@ -1,8 +1,12 @@
 $desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
-    primary: #D3D3D3,
-    secondary: white,
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
 );
 $spacing: (
     padding: 0,
@@ -21,7 +25,7 @@ $spacing: (
 
 .aboutHeader{
     background: selector($colours, primary);
-    color: selector($colours, fontColour);
+    color: selector($colours, secondary);
     padding: 10vh;
     font-size: 2rem;
     text-align: center;
@@ -31,11 +35,15 @@ $spacing: (
     text-align: center;
     padding-bottom: 20px;
     .aboutTitle {
-
+        color: selector($colours, third)
     }
     .aboutDesc {
+        color: selector($colours, fourth);
         padding: 50px;
         display: inline;
+        .headerQ {
+            color: selector($colours, third);
+        }
     }
     
 }

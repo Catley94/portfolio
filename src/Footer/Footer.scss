@@ -1,3 +1,28 @@
+$desktop: 840px;
+$colours: (
+    fontColour: #5e5e5e,
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
+);
+$spacing: (
+    padding: 0,
+    margin: 0,
+    marginTop: 30px,
+    borderRadius: 20px
+);
+@function selector($CNS, $color-name) {
+    @return map-get($CNS, $color-name)
+};
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
 .Footer {
     grid-area: Footer;
     padding: 50px;
@@ -8,11 +33,11 @@
     // border-width: 5px;
     // border-bottom-right-radius: 100px;
     text-align: center;
-    background: lightgrey;
+    background: selector($colours, primary);
     
     
     
   }
   .whiteText {
-    color: black;
+    color: selector($colours, fourth);
   }

@@ -2,10 +2,10 @@
   grid-area: Footer;
   padding: 50px;
   text-align: center;
-  background: lightgrey;
+  background: #5d5d5a;
 }
 
 .whiteText {
-  color: black;
+  color: #fff4e3;
 }
 /*# sourceMappingURL=Footer.css.map */

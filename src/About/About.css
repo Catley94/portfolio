@@ -1,6 +1,6 @@
 .aboutHeader {
-  background: #D3D3D3;
-  color: #5e5e5e;
+  background: #5d5d5a;
+  color: #ffa45c;
   padding: 10vh;
   font-size: 2rem;
   text-align: center;
@@ -11,8 +11,17 @@
   padding-bottom: 20px;
 }
 
+.AboutMe .aboutTitle {
+  color: #ffcdab;
+}
+
 .AboutMe .aboutDesc {
+  color: #fff4e3;
   padding: 50px;
   display: inline;
+}
+
+.AboutMe .aboutDesc .headerQ {
+  color: #ffcdab;
 }
 /*# sourceMappingURL=About.css.map */
