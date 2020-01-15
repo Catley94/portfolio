@@ -1,8 +1,12 @@
 $desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
-    secondary: white,
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
 );
 $spacing: (
     padding: 0,
@@ -47,9 +51,9 @@ $spacing: (
         "Websites Websites Websites";
         }
         .titles {
-            color: selector($colours, fontColour);
+            color: selector($colours, secondary);
             @include desktop {
-                color: red;
+                // color: red;
             }
         }
         .information {
@@ -58,7 +62,7 @@ $spacing: (
         }
         .technologies {
             grid-area:technologies;
-            color: selector($colours, fontColour);
+            color: selector($colours, third);
             
         }
         

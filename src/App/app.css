@@ -1,5 +1,5 @@
 a {
-  color: #5e5e5e;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -33,10 +33,10 @@ a:hover {
 }
 
 h1 {
-  color: #5e5e5e;
+  color: #ffa45c;
 }
 
 h2 {
-  color: #5e5e5e;
+  color: #ffa45c;
 }
 /*# sourceMappingURL=app.css.map */

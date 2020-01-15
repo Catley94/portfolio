@@ -1,3 +1,12 @@
+$colours: (
+    fontColour: #5e5e5e,
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
+);
 
 @function selector($CNS, $color-name) {
     @return map-get($CNS, $color-name)
@@ -11,12 +20,8 @@ $desktop: 840px;
     }
 }
 
-$colours: (
-    fontColour: #5e5e5e,
-    primary: lightgrey,
-    secondary: white,
 
-);
+
 $spacing: (
     padding: 0,
     margin: 0,
@@ -41,7 +46,7 @@ $spacing: (
     transition: all 0.3s ease-in;
     background:selector($colours, secondary); 
     border-radius: selector($spacing, borderRadius);
-    color: selector($colours, fontColour);
+    color: selector($colours, primary);
     box-shadow: 2px 5px 10px #545454;
     margin: 1rem;
     // height: 25rem;
@@ -51,13 +56,14 @@ $spacing: (
     &:hover {
         background-color: selector($colours, primary);
         color:selector($colours, secondary);
-        box-shadow: 0px 5px 20px #545454;
+        box-shadow: 0px 5px 20px selector($colours, secondary);
     }
     
     .projectTitle {
         grid-area: projectTitle;
         position: relative;
         padding: .1rem;
+        // color: selector($colours, primary);
         @include desktop {
             position: relative;
             padding: 0;
@@ -66,6 +72,7 @@ $spacing: (
     .content {
         grid-area: content;
         padding: 1rem;
+        // color: selector($colours, primary);
         @include desktop {
             padding: 2rem;
         }

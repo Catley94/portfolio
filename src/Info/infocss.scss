@@ -1,8 +1,11 @@
 $colours: (
     fontColour: #5e5e5e,
-    primary: lightgrey,
-    secondary: white,
-
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
 );
 
 @function selector($CNS, $color-name) {
@@ -48,7 +51,7 @@ $desktop: 840px;
     }
     .description {
       grid-area: Description;
-      color: selector($colours, fontColour);
+      color: selector($colours, third);
       @include desktop {
         margin-left: 350px;
         margin-right: 350px;
@@ -56,6 +59,6 @@ $desktop: 840px;
     }
     .githubLink {
       grid-area: Github;
-      color: selector($colours, fontColour);
+      color: selector($colours, third);
     }
   }

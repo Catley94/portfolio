@@ -15,7 +15,7 @@ class App extends Component {
       name: "Samuel Catley",
       jobTitle: "Developing for a hobby",
       github: "https://github.com/Catley94",
-      description: "I am a self learning Junior JavaScript Developer, I aim to prove worth within the programming industry and I'm currently looking for an opportunity to use my skills and give me a chance to continue improving.",
+      description: "I am a self taught Junior JavaScript Developer, I aim to prove my worth within the Web Development industry and I'm currently looking for an opportunity demonstrate and display my skills.",
       projects: [{
           id: 1,
           ProjectName: 'Panels',

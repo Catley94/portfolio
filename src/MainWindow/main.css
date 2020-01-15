@@ -21,13 +21,7 @@
 }
 
 .Main .midCard .titles {
-  color: #5e5e5e;
-}
-
-@media (min-width: 840px) {
-  .Main .midCard .titles {
-    color: red;
-  }
+  color: #ffa45c;
 }
 
 .Main .midCard .information {
@@ -38,7 +32,7 @@
 
 .Main .midCard .technologies {
   grid-area: technologies;
-  color: #5e5e5e;
+  color: #ffcdab;
 }
 
 .Main .midCard .Websites {

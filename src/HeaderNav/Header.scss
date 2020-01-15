@@ -1,8 +1,12 @@
 $desktop: 840px;
 $colours: (
     fontColour: #5e5e5e,
-    primary: orange,
-    secondary: white,
+    // primary: #D3D3D3,
+    primary: #5d5d5a,
+    // secondary: white,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3,
 );
 @function selector($CNS, $color-name) {
     @return map-get($CNS, $color-name)
@@ -26,4 +30,9 @@ $colours: (
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
+    
+}
+
+.navLinks {
+    color: selector($colours, secondary)
 }

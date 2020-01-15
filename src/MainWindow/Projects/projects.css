@@ -8,19 +8,19 @@
       grid-template-areas: "projectTitle" "projectGithub" "content";
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  background: white;
+  background: #ffa45c;
   border-radius: 20px;
-  color: #5e5e5e;
+  color: #5d5d5a;
   -webkit-box-shadow: 2px 5px 10px #545454;
           box-shadow: 2px 5px 10px #545454;
   margin: 1rem;
 }
 
 .flexContainer:hover {
-  background-color: lightgrey;
-  color: white;
-  -webkit-box-shadow: 0px 5px 20px #545454;
-          box-shadow: 0px 5px 20px #545454;
+  background-color: #5d5d5a;
+  color: #ffa45c;
+  -webkit-box-shadow: 0px 5px 20px #ffa45c;
+          box-shadow: 0px 5px 20px #ffa45c;
 }
 
 .flexContainer .projectTitle {

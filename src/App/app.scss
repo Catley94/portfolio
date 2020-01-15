@@ -1,7 +1,11 @@
 $colours: (
-    fontColour: #5e5e5e,
-    primary: orange,
-    secondary: white,
+    // fontColour: #5e5e5e,
+    // primary: orange,
+    // secondary: white,
+    primary: #5d5d5a,
+    secondary: #ffa45c,
+    third: #ffcdab,
+    fourth: #fff4e3
 
 );
 
@@ -10,7 +14,8 @@ $colours: (
 };
 
 a {
-    color: selector($colours, fontColour);
+    // color: selector($colours, secondary);
+    color: inherit;
     text-decoration: none;
 }
 a:hover {
@@ -36,9 +41,9 @@ a:hover {
     }
 }
 h1 {
-    color: selector($colours, fontColour);
+    color: selector($colours, secondary);
 }
 h2 {
-    color: selector($colours, fontColour);
+    color: selector($colours, secondary);
 }
 
