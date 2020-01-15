@@ -39,6 +39,7 @@
   -ms-grid-column-align: center;
       justify-self: center;
   width: 80vw;
+  border-radius: 200px;
 }
 
 @media (min-width: 840px) {

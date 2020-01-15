@@ -56,9 +56,11 @@ $spacing: (
     grid-area: websiteImage;
     justify-self: center;
     width: 80vw;
+    border-radius: 200px;
     @include desktop {
         width: 30vw;
         margin-left: 2.5rem;
+        
     }
     
 }
