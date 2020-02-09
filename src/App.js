@@ -64,7 +64,7 @@ class App extends Component {
           id: 1,
           WebsiteName: 'Goudhurst Explorers',
           WebsiteDescription: 'My partner and I currently are Explorer Leaders, and we\'re trying to increase our awareness as Explorers in general, as Explorers are quite new to the scouting industry, to be an Explorer, you must be between the age of 14-18. I also created this website not only for awareness but for the schedule of what the coming weeks.',
-          WebsiteLink: 'https://goudhurst-explorers.herokuapp.com/',
+          WebsiteLink: 'https://www.goudhurstexplorers.com',
           WebsiteImg: goudhurstImg
 
         }
