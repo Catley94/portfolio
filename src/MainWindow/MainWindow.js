@@ -53,15 +53,15 @@ const MainWindow = (props) => {
                   githubLink={props.projects[2].GithubLink}
                 />
               </div>
-              <div className="Project3">
+              {/* <div className="Project3">
                 <Projects 
                   projectN={props.projects[3].ProjectName}
                   projectDesc={props.projects[3].ProjectDescription}
                   projectLink={props.projects[3].ProjectLink}
                   githubLink={props.projects[3].GithubLink}
                 />
-              </div>
-              <div className="Project4">
+              </div> */}
+              {/* <div className="Project4">
                 <Projects 
                   projectN={props.projects[4].ProjectName}
                   projectDesc={props.projects[4].ProjectDescription}
@@ -76,7 +76,7 @@ const MainWindow = (props) => {
                   projectLink={props.projects[5].ProjectLink}
                   githubLink={props.projects[5].GithubLink}
                 />
-              </div>
+              </div> */}
               <div class="Websites">
                 <div class="goudhurstExplorers">
                   <h2 class="titles">Websites</h2>
