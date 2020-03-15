@@ -20,7 +20,7 @@ a {
 }
 a:hover {
     animation: cubic1 0.4s alternate ease-out 1;
-    
+
 }
 
 @keyframes cubic1 {
@@ -46,4 +46,3 @@ h1 {
 h2 {
     color: selector($colours, secondary);
 }
-

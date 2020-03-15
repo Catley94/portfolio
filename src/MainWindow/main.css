@@ -21,7 +21,7 @@
 }
 
 .Main .midCard .titles {
-  color: #ffa45c;
+  color: black;
 }
 
 .Main .midCard .information {
@@ -32,7 +32,7 @@
 
 .Main .midCard .technologies {
   grid-area: technologies;
-  color: #ffcdab;
+  color: black;
 }
 
 .Main .midCard .Websites {

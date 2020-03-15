@@ -6,6 +6,9 @@
 }
 
 .whiteText {
-  color: #fff4e3;
+  color: #FFF;
 }
 /*# sourceMappingURL=Footer.css.map */
+a:hover {
+  color:inherit;
+}

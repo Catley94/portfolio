@@ -4,8 +4,8 @@ a {
 }
 
 a:hover {
-  -webkit-animation: cubic1 0.4s alternate ease-out 1;
-          animation: cubic1 0.4s alternate ease-out 1;
+  color: #5D5D5A;
+  text-decoration: underline;
 }
 
 @-webkit-keyframes cubic1 {
@@ -33,10 +33,10 @@ a:hover {
 }
 
 h1 {
-  color: #ffa45c;
+  color: black;
 }
 
 h2 {
-  color: #ffa45c;
+  color: black;
 }
 /*# sourceMappingURL=app.css.map */
