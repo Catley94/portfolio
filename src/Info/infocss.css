@@ -12,7 +12,7 @@
           align-items: center;
   text-align: center;
   background: white;
-  padding: 50px;
+  padding: 1em;
 }
 
 .topSection .name {
@@ -47,4 +47,31 @@
   grid-area: Github;
   color: black;
 }
+
+.line {
+  position: relative;
+  background: black;
+  height: 2px;
+  margin-top: 50px;
+  width: 80vw;
+}
+@media (min-width: 840px) {
+  .line {
+    top: 50px;
+    position: relative;
+    background: black;
+    margin: 10px;
+    height: 2px;
+    width: 80vw;
+  }
+  .line2 {
+    position: relative;
+    top: 30px;
+    background: black;
+    margin: 20px;
+    height: 2px;
+    width: 60vw;
+  }
+}
+
 /*# sourceMappingURL=infocss.css.map */

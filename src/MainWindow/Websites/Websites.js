@@ -11,6 +11,7 @@ const Websites = (props) => {
                 <h3 className="websiteTitle"><a href={props.websiteLink}>{props.websiteName}</a></h3>
                 <a href={props.websiteLink}><img class="websiteImage" src={props.websiteImg} /></a>
                 <p className="websiteDescription">{props.websiteDescription}</p>
+
         </div>
     )
 }

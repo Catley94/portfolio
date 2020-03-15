@@ -8,12 +8,12 @@ import Info from '../Info/Info';
 
 
 const MainWindow = (props) => {
-    
+
     return(
-        
+
         <div className="Main">
           <div className="Info">
-            <Info 
+            <Info
             name={props.name}
             jobTitle={props.jobTitle}
             github={props.github}
@@ -27,10 +27,10 @@ const MainWindow = (props) => {
                   <h3>HTML, CSS, JAVASCRIPT, SASS, REACT, SOLIDITY.</h3>
                 </div>
                 <h2 className="titles">Projects</h2>
-                
+
               </div>
               <div className="Project0">
-                <Projects 
+                <Projects
                   projectN={props.projects[0].ProjectName}
                   projectDesc={props.projects[0].ProjectDescription}
                   projectLink={props.projects[0].ProjectLink}
@@ -38,7 +38,7 @@ const MainWindow = (props) => {
                 />
               </div>
               <div className="Project1">
-                <Projects 
+                <Projects
                   projectN={props.projects[1].ProjectName}
                   projectDesc={props.projects[1].ProjectDescription}
                   projectLink={props.projects[1].ProjectLink}
@@ -46,7 +46,7 @@ const MainWindow = (props) => {
                 />
               </div>
               <div className="Project2">
-                <Projects 
+                <Projects
                   projectN={props.projects[2].ProjectName}
                   projectDesc={props.projects[2].ProjectDescription}
                   projectLink={props.projects[2].ProjectLink}
@@ -54,7 +54,7 @@ const MainWindow = (props) => {
                 />
               </div>
               {/* <div className="Project3">
-                <Projects 
+                <Projects
                   projectN={props.projects[3].ProjectName}
                   projectDesc={props.projects[3].ProjectDescription}
                   projectLink={props.projects[3].ProjectLink}
@@ -62,7 +62,7 @@ const MainWindow = (props) => {
                 />
               </div> */}
               {/* <div className="Project4">
-                <Projects 
+                <Projects
                   projectN={props.projects[4].ProjectName}
                   projectDesc={props.projects[4].ProjectDescription}
                   projectLink={props.projects[4].ProjectLink}
@@ -70,7 +70,7 @@ const MainWindow = (props) => {
                 />
               </div>
               <div className="Project5">
-                <Projects 
+                <Projects
                   projectN={props.projects[5].ProjectName}
                   projectDesc={props.projects[5].ProjectDescription}
                   projectLink={props.projects[5].ProjectLink}
@@ -80,19 +80,19 @@ const MainWindow = (props) => {
               <div class="Websites">
                 <div class="goudhurstExplorers">
                   <h2 class="titles">Websites</h2>
-                  <Websites 
+                  <Websites
                     websiteName={props.websites[0].WebsiteName}
                     websiteDescription={props.websites[0].WebsiteDescription}
                     websiteLink={props.websites[0].WebsiteLink}
                     websiteImg={props.websites[0].WebsiteImg}
                   />
                 </div>
-              </div>                
+              </div>    
             </div>
             <div className="Footer">
               <Footer />
             </div>
-            
+
         </div>
     )
 }

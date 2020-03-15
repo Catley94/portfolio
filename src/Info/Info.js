@@ -7,8 +7,9 @@ const Info = (props) => {
             <h1 className="name">{props.name}</h1>
             <h2 className="jobTitle">{props.jobTitle}</h2>
             <p className="description">{props.desc}</p>
-            <a href={props.github} className="githubLink">My Github</a> 
-           
+            <a href={props.github} className="githubLink">My Github</a>
+            <span className="line"></span>
+            <span className="line2"></span>
         </div>
     )
 }
