@@ -39,4 +39,10 @@ h1 {
 h2 {
   color: black;
 }
+.HeaderNavigation {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
 /*# sourceMappingURL=app.css.map */
