@@ -55,7 +55,12 @@
   grid-area: websiteDescription;
   color: black;
   display: block;
-  padding: 5rem;
+  /* padding: 5rem; */
+}
+@media (min-width: 840px) {
+  .websiteDescription {
+    padding: 5rem;
+  }
 }
 
 
