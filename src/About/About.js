@@ -11,7 +11,7 @@ const About = (props) => {
         <div className="AboutMe">
             <h2 className="aboutTitle">Short and Sweet Summary</h2>
             <p className="aboutDesc">
-                Currently I consider myself a code hobbyist, as I use a lot of my free time mainly to learn as much as I can but also to create, what I consider, pieces of art.
+                Currently I am an Aspiring Web Developer, I use a lot of my free time mainly to learn as much as I can but also to create, what I consider, pieces of art.
                 <h3 class="headerQ">So, why are you interested front end development?</h3>
                 I've always been interested in coding from a young age however I've never known where to start, it wasn't until the Cryptocurrency hype that it rekindled the embers of my enthusiasm. I started to learn Solidity (Ethereum's smart contract language), but in order to use it effectively I needed to learn the basics, HTML, JS and CSS so I could display, collect and collate information for the smart contract and it was then that my journey started.
                 During this time, I rediscovered my passion for art and music, it was when I started to incorporate this passion into coding and development which exponentially fanned the flames on my enthusiasm which is burning brightly. 
