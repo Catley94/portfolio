@@ -1,11 +1,7 @@
 $colours: (
-    fontColour: #5e5e5e,
-    // primary: #D3D3D3,
-    primary: #5d5d5a,
-    // secondary: white,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3,
+    fontColour: black,
+    backgroundC: white,
+
 );
 
 @function selector($CNS, $color-name) {
@@ -19,6 +15,7 @@ $desktop: 840px;
         @content;
     }
 }
+
 
 
   
@@ -35,14 +32,8 @@ $desktop: 840px;
     "Github";
     align-items: center;
     text-align: center;
-    background: selector($colours, primary);
+    background: selector($colours, backgroundC);
     padding: 50px;
-    
-    //border-radius: 100px 10px;
-    //border-top-style: dotted;
-    //border-right-style: dotted;
-    //border-color: selector($colours, primary);
-    //border-width: 5px;
     .name {
       grid-area: Name;
     }
@@ -51,7 +42,7 @@ $desktop: 840px;
     }
     .description {
       grid-area: Description;
-      color: selector($colours, third);
+      color: selector($colours, fontColour);
       @include desktop {
         margin-left: 350px;
         margin-right: 350px;
@@ -59,6 +50,24 @@ $desktop: 840px;
     }
     .githubLink {
       grid-area: Github;
-      color: selector($colours, third);
+      color: selector($colours, fontColour);
     }
+      @include desktop {
+        .line, .line2 {
+          position: relative;
+          background: #000;
+          height: 2px;
+      }
+      .line {
+        top: 50px;
+        margin: 10px;
+        width: 80vw;
+    }
+    .line2 {
+      top: 30px;
+      margin: 20px;
+      width: 60vw;
+    }
+    }
+   
   }

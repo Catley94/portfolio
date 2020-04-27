@@ -1,12 +1,6 @@
 $colours: (
-    // fontColour: #5e5e5e,
-    // primary: orange,
-    // secondary: white,
-    primary: #5d5d5a,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3
-
+    fontColour: black,
+    backgroundC: white,
 );
 
 @function selector($CNS, $color-name) {
@@ -14,35 +8,15 @@ $colours: (
 };
 
 a {
-    // color: selector($colours, secondary);
     color: inherit;
     text-decoration: none;
 }
 a:hover {
-    animation: cubic1 0.4s alternate ease-out 1;
-
-}
-
-@keyframes cubic1 {
-    0%{
-        font-size: 100%
-    }
-    // 20%{
-    //     font-size: 130%
-    // }
-    50%{
-        font-size: 140%
-    }
-    // 70%{
-    //     font-size: 130%
-    // }
-    100% {
-        font-size: 100%
-    }
+        text-decoration: underline;
 }
 h1 {
-    color: selector($colours, secondary);
+    color: selector($colours, primary);
 }
 h2 {
-    color: selector($colours, secondary);
+    color: selector($colours, primary);
 }

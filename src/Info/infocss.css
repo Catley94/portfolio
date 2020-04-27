@@ -6,13 +6,13 @@
   -ms-grid-rows: 4;
       grid-template-rows: 4;
   justify-items: center;
-      grid-template-areas: "Name" "JobTitle" "Description" "Github";
+      grid-template-areas: "Name" "JobTitle" "Description" "Github";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   background: white;
-  padding: 1em;
+  padding: 50px;
 }
 
 .topSection .name {
@@ -48,30 +48,21 @@
   color: black;
 }
 
-.line {
-  position: relative;
-  background: black;
-  height: 2px;
-  margin-top: 50px;
-  width: 80vw;
-}
 @media (min-width: 840px) {
-  .line {
-    top: 50px;
+  .topSection .line, .topSection .line2 {
     position: relative;
-    background: black;
-    margin: 10px;
+    background: #000;
     height: 2px;
+  }
+  .topSection .line {
+    top: 50px;
+    margin: 10px;
     width: 80vw;
   }
-  .line2 {
-    position: relative;
+  .topSection .line2 {
     top: 30px;
-    background: black;
     margin: 20px;
-    height: 2px;
     width: 60vw;
   }
 }
-
 /*# sourceMappingURL=infocss.css.map */

@@ -5,19 +5,17 @@
       grid-template-columns: auto;
   -ms-grid-rows: 3;
       grid-template-rows: 3;
-      grid-template-areas: "projectTitle" "projectGithub" "content";
+      grid-template-areas: "projectTitle" "projectGithub" "content";
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   background: white;
   border-radius: 20px;
   color: black;
-  -webkit-box-shadow: 2px 5px 10px #5D5D5A;
-          box-shadow: 2px 5px 10px #5D5D5A;
+  -webkit-box-shadow: 2px 5px 10px #545454;
+          box-shadow: 2px 5px 10px #545454;
   margin: 1rem;
 }
-a:hover {
-  color:inherit;
-}
+
 .flexContainer:hover {
   background-color: #5D5D5A;
   color: white;

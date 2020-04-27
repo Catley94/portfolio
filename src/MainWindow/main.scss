@@ -1,12 +1,12 @@
 $desktop: 840px;
 $colours: (
-    fontColour: #5e5e5e,
+    fontColour: black,
     // primary: #D3D3D3,
-    primary: #5d5d5a,
+    backgroundC: white,
     // secondary: white,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3,
+    // secondary: #ffa45c,
+    // third: #ffcdab,
+    // fourth: #fff4e3,
 );
 $spacing: (
     padding: 0,
@@ -51,7 +51,7 @@ $spacing: (
         "Websites Websites Websites";
         }
         .titles {
-            color: selector($colours, secondary);
+            color: selector($colours, fontColour);
             @include desktop {
                 // color: red;
             }
@@ -62,8 +62,17 @@ $spacing: (
         }
         .technologies {
             grid-area:technologies;
-            color: selector($colours, third);
-            
+            color: selector($colours, fontColour);
+            .techImgs {
+                .techImg {
+                    height: 100px;
+                    padding-right: 2em;
+                    margin: 1rem;
+                    &:hover {
+                        // border: 2px solid orange;
+                    }
+                }
+            }
         }
         
         .Websites {

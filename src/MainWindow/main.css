@@ -5,7 +5,7 @@
       grid-template-columns: 1;
   -ms-grid-rows: 8;
       grid-template-rows: 8;
-      grid-template-areas: "information" "Project0" "Project1" "Project2" "Project3" "Project4" "Project5" "Websites";
+      grid-template-areas: "information" "Project0" "Project1" "Project2" "Project3" "Project4" "Project5" "Websites";
   text-align: center;
   padding: 2rem;
 }
@@ -16,7 +16,7 @@
         grid-template-columns: 3;
     -ms-grid-rows: 4;
         grid-template-rows: 4;
-        grid-template-areas: "information information information" "Project0 Project1 Project2" "Project3 Project4 Project5" "Websites Websites Websites";
+        grid-template-areas: "information information information" "Project0 Project1 Project2" "Project3 Project4 Project5" "Websites Websites Websites";
   }
 }
 
@@ -33,6 +33,12 @@
 .Main .midCard .technologies {
   grid-area: technologies;
   color: black;
+}
+
+.Main .midCard .technologies .techImgs .techImg {
+  height: 100px;
+  padding-right: 2em;
+  margin: 1rem;
 }
 
 .Main .midCard .Websites {
@@ -76,6 +82,4 @@
   -ms-grid-column: 1;
   grid-area: Project5;
 }
-
-
 /*# sourceMappingURL=main.css.map */

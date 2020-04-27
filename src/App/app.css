@@ -4,45 +4,6 @@ a {
 }
 
 a:hover {
-  color: #5D5D5A;
   text-decoration: underline;
-}
-
-@-webkit-keyframes cubic1 {
-  0% {
-    font-size: 100%;
-  }
-  50% {
-    font-size: 140%;
-  }
-  100% {
-    font-size: 100%;
-  }
-}
-
-@keyframes cubic1 {
-  0% {
-    font-size: 100%;
-  }
-  50% {
-    font-size: 140%;
-  }
-  100% {
-    font-size: 100%;
-  }
-}
-
-h1 {
-  color: black;
-}
-
-h2 {
-  color: black;
-}
-.HeaderNavigation {
-  position: sticky;
-  top: 0;
-  background: white;
-  z-index: 10;
 }
 /*# sourceMappingURL=app.css.map */

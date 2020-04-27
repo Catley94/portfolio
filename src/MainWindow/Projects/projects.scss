@@ -1,11 +1,7 @@
 $colours: (
-    fontColour: #5e5e5e,
-    // primary: #D3D3D3,
-    primary: #5d5d5a,
-    // secondary: white,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3,
+    fontColour: black,
+    backgroundC: white,
+    hoverC: #5D5D5A,
 );
 
 @function selector($CNS, $color-name) {
@@ -44,9 +40,9 @@ $spacing: (
     "projectGithub"
     "content";
     transition: all 0.3s ease-in;
-    background:selector($colours, secondary); 
+    background:selector($colours, backgroundC); 
     border-radius: selector($spacing, borderRadius);
-    color: selector($colours, primary);
+    color: selector($colours, fontColour);
     box-shadow: 2px 5px 10px #545454;
     margin: 1rem;
     // height: 25rem;
@@ -54,9 +50,9 @@ $spacing: (
         // margin: 5rem;
     }
     &:hover {
-        background-color: selector($colours, primary);
-        color:selector($colours, secondary);
-        box-shadow: 0px 5px 20px selector($colours, secondary);
+        background-color: selector($colours, hoverC);
+        color:selector($colours, backgroundC);
+        box-shadow: 0px 5px 20px selector($colours, fontColour);
     }
     
     .projectTitle {
@@ -89,27 +85,6 @@ $spacing: (
             
         }
     }
-    // .pLogo {
-    //     grid-area: pLogo;
-    //     justify-self: end;
-    //     align-self: end;
-    //     width: selector($spacing, reactLogoWidth);
-    //     position: relative;
-    //     left: 15px;
-    //     top: 10px;
-        
-        
-    //     @include desktop {
-    //         align-self: start;
-    //         margin-top: selector($spacing, marginTop);
-    //         left: 30%;
-    //         width: selector($spacing, reactLogoWidthD);
-    //         position: relative;
-    //         left: 0%;
-            
-    //     }
-    // }
-
 }
 
 

@@ -5,7 +5,7 @@
       grid-template-columns: 1;
   -ms-grid-rows: 3;
       grid-template-rows: 3;
-      grid-template-areas: "websiteTitle" "websiteImage" "websiteDescription";
+      grid-template-areas: "websiteTitle" "websiteImage" "websiteDescription";
 }
 
 @media (min-width: 840px) {
@@ -14,7 +14,7 @@
         grid-template-columns: 2;
     -ms-grid-rows: 2;
         grid-template-rows: 2;
-        grid-template-areas: "websiteTitle websiteTitle" "websiteImage websiteDescription";
+        grid-template-areas: "websiteTitle websiteTitle" "websiteImage websiteDescription";
   }
 }
 
@@ -55,13 +55,6 @@
   grid-area: websiteDescription;
   color: black;
   display: block;
-  /* padding: 5rem; */
+  padding: 5rem;
 }
-@media (min-width: 840px) {
-  .websiteDescription {
-    padding: 5rem;
-  }
-}
-
-
 /*# sourceMappingURL=websites.css.map */

@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       name: "Samuel Catley",
-      jobTitle: "Developing for a hobby",
+      jobTitle: "Aspiring Web Developer",
       github: "https://github.com/Catley94",
       description: "I am a self taught Junior JavaScript Developer, I aim to prove my worth within the Web Development industry and I'm currently looking for an opportunity demonstrate and display my skills.",
       projects: [

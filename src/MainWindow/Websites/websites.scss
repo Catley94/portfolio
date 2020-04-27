@@ -1,12 +1,12 @@
 $desktop: 840px;
 $colours: (
-    fontColour: #5e5e5e,
+    fontColour: black,
     // primary: #D3D3D3,
-    primary: #5d5d5a,
+    backgroundC: white,
     // secondary: white,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3,
+    // secondary: #ffa45c,
+    // third: #ffcdab,
+    // fourth: #fff4e3,
 );
 $spacing: (
     padding: 0,
@@ -45,7 +45,7 @@ $spacing: (
 .websiteTitle {
     grid-area: websiteTitle;
     font-size: 1rem;
-    color: selector($colours, third);
+    color: selector($colours, fontColour);
     @include desktop {
         font-size: 1.5rem;
         
@@ -67,7 +67,7 @@ $spacing: (
 
 .websiteDescription {
     grid-area: websiteDescription;
-    color: selector($colours, fourth);
+    color: selector($colours, fontColour);
     display: block;
     padding: 5rem;
 }

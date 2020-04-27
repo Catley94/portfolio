@@ -1,12 +1,8 @@
 $desktop: 840px;
 $colours: (
-    fontColour: #5e5e5e,
-    // primary: #D3D3D3,
-    primary: #5d5d5a,
-    // secondary: white,
-    secondary: #ffa45c,
-    third: #ffcdab,
-    fourth: #fff4e3,
+    fontColour: white,
+    backgroundC: #5d5d5a,
+
 );
 $spacing: (
     padding: 0,
@@ -26,18 +22,12 @@ $spacing: (
 .Footer {
     grid-area: Footer;
     padding: 50px;
-    // border-top-left-radius: 100px;
-    // border-left-style: dotted;
-    // border-bottom-style: dotted;
-    // border-color: orange;
-    // border-width: 5px;
-    // border-bottom-right-radius: 100px;
     text-align: center;
-    background: selector($colours, primary);
+    background: selector($colours, backgroundC);
     
     
     
   }
   .whiteText {
-    color: selector($colours, fourth);
+    color: selector($colours, fontColour);
   }
