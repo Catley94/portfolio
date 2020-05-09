@@ -5,7 +5,8 @@ import MainWindow from './MainWindow/MainWindow';
 import Header from './HeaderNav/Header';
 import About from './About/About';
 import goudhurstImg from './img/explorersSite.PNG';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Jumbotron, Container, Row, Button } from 'react-bootstrap';
 
 
 class App extends Component {
@@ -76,7 +77,14 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="HeaderNavigation">
+          <Jumbotron fluid>
+            <Container>
+              <Row>
+                  <Button href="https://iamsamtc.com" variant="success" block><h1 className="display-2">Click here to see my new portfolio</h1></Button>                
+              </Row>
+            </Container>
+          </Jumbotron>
+          {/* <div className="HeaderNavigation">
             <Header />
           </div>
           <div className="AppContainer">
@@ -92,7 +100,7 @@ class App extends Component {
                 />} 
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </Router>
     );
