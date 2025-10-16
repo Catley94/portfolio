@@ -1,0 +1,8 @@
+/* Simple entry animations */
+.fade-in{opacity:0;transform:translateY(10px)}
+.fade-in-delay{opacity:0;transform:translateY(10px)}
+
+/* Will be set to visible via GSAP on load/scroll */
+
+/* Scroll section spacing */
+#about .container, #skills .container, #contact .container { padding-top: 6rem; padding-bottom: 6rem; }
